@@ -1,0 +1,481 @@
+INFO - 2024-11-27 02:07:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-27 02:07:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-27 02:07:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-27 02:07:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-27 02:07:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-27 02:08:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-27 02:08:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-27 02:09:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-27 02:09:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-27 02:09:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-27 02:10:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-27 02:32:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-27 02:33:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-27 02:33:45 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "Registration .php"
+[Method: GET, Route: dang_ky]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Registration .php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('Registration ', [], true)
+ 3 APPPATH\Controllers\account\AccountController.php(48): view('Registration ')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\account\AccountController->regist()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\account\AccountController))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('E:\\Xampp\\htdocs\\codeigniter\\nhahang\\public\\index.php')
+INFO - 2024-11-27 02:34:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-27 02:39:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-27 02:39:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-27 02:39:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-27 02:39:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-27 02:39:51 --> Error: Call to a member function setRules() on null
+[Method: POST, Route: dashboard/user/create]
+in APPPATH\Models\UserModel.php on line 91.
+ 1 APPPATH\Models\UserModel.php(39): App\Models\UserModel->ValidateAddUser([...])
+ 2 APPPATH\Controllers\dashboard\User\UserDataController.php(53): App\Models\UserModel->AddUserInfo([...])
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\dashboard\User\UserDataController->create()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\dashboard\User\UserDataController))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('E:\\Xampp\\htdocs\\codeigniter\\nhahang\\public\\index.php')
+INFO - 2024-11-27 02:42:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-27 02:42:32 --> Error: Call to a member function setRules() on null
+[Method: POST, Route: dashboard/user/create]
+in APPPATH\Models\UserModel.php on line 91.
+ 1 APPPATH\Models\UserModel.php(39): App\Models\UserModel->ValidateAddUser([...])
+ 2 APPPATH\Controllers\dashboard\User\UserDataController.php(53): App\Models\UserModel->AddUserInfo([...])
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\dashboard\User\UserDataController->create()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\dashboard\User\UserDataController))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('E:\\Xampp\\htdocs\\codeigniter\\nhahang\\public\\index.php')
+INFO - 2024-11-27 02:46:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-27 02:46:01 --> TypeError: CodeIgniter\Validation\Validation::withRequest(): Argument #1 ($request) must be of type CodeIgniter\HTTP\RequestInterface, array given, called in E:\Xampp\htdocs\codeigniter\nhahang\app\Controllers\dashboard\User\UserDataController.php on line 112
+[Method: POST, Route: dashboard/user/create]
+in SYSTEMPATH\Validation\Validation.php on line 503.
+ 1 APPPATH\Controllers\dashboard\User\UserDataController.php(112): CodeIgniter\Validation\Validation->withRequest([...])
+ 2 APPPATH\Controllers\dashboard\User\UserDataController.php(59): App\Controllers\dashboard\User\UserDataController->ValidateAddUser([...])
+ 3 APPPATH\Controllers\dashboard\User\UserDataController.php(53): App\Controllers\dashboard\User\UserDataController->AddUserInfo([...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\dashboard\User\UserDataController->create()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\dashboard\User\UserDataController))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('E:\\Xampp\\htdocs\\codeigniter\\nhahang\\public\\index.php')
+INFO - 2024-11-27 02:46:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-27 02:46:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-27 02:46:25 --> TypeError: CodeIgniter\Validation\Validation::withRequest(): Argument #1 ($request) must be of type CodeIgniter\HTTP\RequestInterface, array given, called in E:\Xampp\htdocs\codeigniter\nhahang\app\Controllers\dashboard\User\UserDataController.php on line 112
+[Method: POST, Route: dashboard/user/create]
+in SYSTEMPATH\Validation\Validation.php on line 503.
+ 1 APPPATH\Controllers\dashboard\User\UserDataController.php(112): CodeIgniter\Validation\Validation->withRequest([...])
+ 2 APPPATH\Controllers\dashboard\User\UserDataController.php(59): App\Controllers\dashboard\User\UserDataController->ValidateAddUser([...])
+ 3 APPPATH\Controllers\dashboard\User\UserDataController.php(53): App\Controllers\dashboard\User\UserDataController->AddUserInfo([...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\dashboard\User\UserDataController->create()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\dashboard\User\UserDataController))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('E:\\Xampp\\htdocs\\codeigniter\\nhahang\\public\\index.php')
+INFO - 2024-11-27 02:50:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-27 02:52:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-27 02:58:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-27 03:00:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-27 03:00:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-27 03:00:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-27 03:00:39 --> TypeError: CodeIgniter\Validation\Validation::withRequest(): Argument #1 ($request) must be of type CodeIgniter\HTTP\RequestInterface, array given, called in E:\Xampp\htdocs\codeigniter\nhahang\app\Controllers\dashboard\User\UserDataController.php on line 110
+[Method: POST, Route: dashboard/user/create]
+in SYSTEMPATH\Validation\Validation.php on line 503.
+ 1 APPPATH\Controllers\dashboard\User\UserDataController.php(110): CodeIgniter\Validation\Validation->withRequest([...])
+ 2 APPPATH\Controllers\dashboard\User\UserDataController.php(57): App\Controllers\dashboard\User\UserDataController->ValidateAddUser([...])
+ 3 APPPATH\Controllers\dashboard\User\UserDataController.php(51): App\Controllers\dashboard\User\UserDataController->AddUserInfo([...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\dashboard\User\UserDataController->create()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\dashboard\User\UserDataController))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('E:\\Xampp\\htdocs\\codeigniter\\nhahang\\public\\index.php')
+INFO - 2024-11-27 03:02:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-27 03:02:04 --> Error: Cannot use object of type CodeIgniter\HTTP\IncomingRequest as array
+[Method: POST, Route: dashboard/user/create]
+in APPPATH\Controllers\dashboard\User\UserDataController.php on line 67.
+ 1 APPPATH\Controllers\dashboard\User\UserDataController.php(51): App\Controllers\dashboard\User\UserDataController->AddUserInfo(Object(CodeIgniter\HTTP\IncomingRequest))
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\dashboard\User\UserDataController->create()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\dashboard\User\UserDataController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('E:\\Xampp\\htdocs\\codeigniter\\nhahang\\public\\index.php')
+INFO - 2024-11-27 03:02:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-27 03:02:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-27 03:02:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-27 03:11:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-27 03:11:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-27 03:11:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-27 03:11:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-27 03:11:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-27 03:48:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-27 04:02:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-27 04:02:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-27 04:03:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-27 04:03:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-27 04:03:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-27 04:05:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-27 04:05:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-27 04:05:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-11-27 04:05:49 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`test`.`user`, CONSTRAINT `user_group_id_foreign` FOREIGN KEY (`group_id`) REFERENCES `group` (`group_id`) ON DELETE CASCADE ON UPDATE CASCADE) in E:\Xampp\htdocs\codeigniter\nhahang\system\Database\MySQLi\Connection.php:308
+Stack trace:
+#0 E:\Xampp\htdocs\codeigniter\nhahang\system\Database\MySQLi\Connection.php(308): mysqli->query('INSERT INTO `us...', 0)
+#1 E:\Xampp\htdocs\codeigniter\nhahang\system\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 E:\Xampp\htdocs\codeigniter\nhahang\system\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 E:\Xampp\htdocs\codeigniter\nhahang\system\Database\BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 E:\Xampp\htdocs\codeigniter\nhahang\system\Model.php(383): CodeIgniter\Database\BaseBuilder->insert()
+#5 E:\Xampp\htdocs\codeigniter\nhahang\system\BaseModel.php(840): CodeIgniter\Model->doInsert(Array)
+#6 E:\Xampp\htdocs\codeigniter\nhahang\system\Model.php(791): CodeIgniter\BaseModel->insert(Array, false)
+#7 E:\Xampp\htdocs\codeigniter\nhahang\system\BaseModel.php(751): CodeIgniter\Model->insert(Array, false)
+#8 E:\Xampp\htdocs\codeigniter\nhahang\app\Controllers\account\AccountController.php(83): CodeIgniter\BaseModel->save(Array)
+#9 E:\Xampp\htdocs\codeigniter\nhahang\app\Controllers\account\AccountController.php(60): App\Controllers\account\AccountController->AddUserInfo(Object(CodeIgniter\HTTP\IncomingRequest))
+#10 E:\Xampp\htdocs\codeigniter\nhahang\system\CodeIgniter.php(933): App\Controllers\account\AccountController->create()
+#11 E:\Xampp\htdocs\codeigniter\nhahang\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\account\AccountController))
+#12 E:\Xampp\htdocs\codeigniter\nhahang\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 E:\Xampp\htdocs\codeigniter\nhahang\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#14 E:\Xampp\htdocs\codeigniter\nhahang\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#15 E:\Xampp\htdocs\codeigniter\nhahang\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#16 E:\Xampp\htdocs\codeigniter\nhahang\system\Commands\Server\rewrite.php(49): require_once('E:\\Xampp\\htdocs...')
+#17 {main}
+CRITICAL - 2024-11-27 04:05:49 --> CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`test`.`user`, CONSTRAINT `user_group_id_foreign` FOREIGN KEY (`group_id`) REFERENCES `group` (`group_id`) ON DELETE CASCADE ON UPDATE CASCADE)
+[Method: POST, Route: registed]
+in SYSTEMPATH\Database\BaseConnection.php on line 676.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `user` (`email`, `name`, `phone_number`, `password`, `is_admin`, `is_inside`, `group_id`) VALUES (:email:, :name:, :phone_number:, :password:, :is_admin:, :is_inside:, :group_id:)', [...], false)
+ 2 SYSTEMPATH\Model.php(383): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(791): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\account\AccountController.php(83): CodeIgniter\BaseModel->save([...])
+ 7 APPPATH\Controllers\account\AccountController.php(60): App\Controllers\account\AccountController->AddUserInfo(Object(CodeIgniter\HTTP\IncomingRequest))
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\account\AccountController->create()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\account\AccountController))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('E:\\Xampp\\htdocs\\codeigniter\\nhahang\\public\\index.php')
+CRITICAL - 2024-11-27 04:05:49 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`test`.`user`, CONSTRAINT `user_group_id_foreign` FOREIGN KEY (`group_id`) REFERENCES `group` (`group_id`) ON DELETE CASCADE ON UPDATE CASCADE)
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 313.
+ 1 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `user` (`email`, `name`, `phone_number`, `password`, `is_admin`, `is_inside`, `group_id`) VALUES (\'mottac1106@gmail.com\', \'Trung anh\', \'123456789\', \'$2y$10$yx7LnlKQEO4S4OheUAJqjOvO5Cv6MvpEQ88FXRbHeQlUEIQ6Om8W6\', \'0\', \'0\', \'\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `user` (`email`, `name`, `phone_number`, `password`, `is_admin`, `is_inside`, `group_id`) VALUES (\'mottac1106@gmail.com\', \'Trung anh\', \'123456789\', \'$2y$10$yx7LnlKQEO4S4OheUAJqjOvO5Cv6MvpEQ88FXRbHeQlUEIQ6Om8W6\', \'0\', \'0\', \'\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `user` (`email`, `name`, `phone_number`, `password`, `is_admin`, `is_inside`, `group_id`) VALUES (:email:, :name:, :phone_number:, :password:, :is_admin:, :is_inside:, :group_id:)', [...], false)
+ 4 SYSTEMPATH\Model.php(383): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(791): CodeIgniter\BaseModel->insert([...], false)
+ 7 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+ 8 APPPATH\Controllers\account\AccountController.php(83): CodeIgniter\BaseModel->save([...])
+ 9 APPPATH\Controllers\account\AccountController.php(60): App\Controllers\account\AccountController->AddUserInfo(Object(CodeIgniter\HTTP\IncomingRequest))
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\account\AccountController->create()
+11 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\account\AccountController))
+12 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+16 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('E:\\Xampp\\htdocs\\codeigniter\\nhahang\\public\\index.php')
+CRITICAL - 2024-11-27 04:05:49 --> [Caused by] mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`test`.`user`, CONSTRAINT `user_group_id_foreign` FOREIGN KEY (`group_id`) REFERENCES `group` (`group_id`) ON DELETE CASCADE ON UPDATE CASCADE)
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 308.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(308): mysqli->query('INSERT INTO `user` (`email`, `name`, `phone_number`, `password`, `is_admin`, `is_inside`, `group_id`) VALUES (\'mottac1106@gmail.com\', \'Trung anh\', \'123456789\', \'$2y$10$yx7LnlKQEO4S4OheUAJqjOvO5Cv6MvpEQ88FXRbHeQlUEIQ6Om8W6\', \'0\', \'0\', \'\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `user` (`email`, `name`, `phone_number`, `password`, `is_admin`, `is_inside`, `group_id`) VALUES (\'mottac1106@gmail.com\', \'Trung anh\', \'123456789\', \'$2y$10$yx7LnlKQEO4S4OheUAJqjOvO5Cv6MvpEQ88FXRbHeQlUEIQ6Om8W6\', \'0\', \'0\', \'\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `user` (`email`, `name`, `phone_number`, `password`, `is_admin`, `is_inside`, `group_id`) VALUES (\'mottac1106@gmail.com\', \'Trung anh\', \'123456789\', \'$2y$10$yx7LnlKQEO4S4OheUAJqjOvO5Cv6MvpEQ88FXRbHeQlUEIQ6Om8W6\', \'0\', \'0\', \'\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `user` (`email`, `name`, `phone_number`, `password`, `is_admin`, `is_inside`, `group_id`) VALUES (:email:, :name:, :phone_number:, :password:, :is_admin:, :is_inside:, :group_id:)', [...], false)
+ 5 SYSTEMPATH\Model.php(383): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(791): CodeIgniter\BaseModel->insert([...], false)
+ 8 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+ 9 APPPATH\Controllers\account\AccountController.php(83): CodeIgniter\BaseModel->save([...])
+10 APPPATH\Controllers\account\AccountController.php(60): App\Controllers\account\AccountController->AddUserInfo(Object(CodeIgniter\HTTP\IncomingRequest))
+11 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\account\AccountController->create()
+12 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\account\AccountController))
+13 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+17 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('E:\\Xampp\\htdocs\\codeigniter\\nhahang\\public\\index.php')
+ERROR - 2024-11-27 04:09:21 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`test`.`user`, CONSTRAINT `user_group_id_foreign` FOREIGN KEY (`group_id`) REFERENCES `group` (`group_id`) ON DELETE CASCADE ON UPDATE CASCADE) in E:\Xampp\htdocs\codeigniter\nhahang\system\Database\MySQLi\Connection.php:308
+Stack trace:
+#0 E:\Xampp\htdocs\codeigniter\nhahang\system\Database\MySQLi\Connection.php(308): mysqli->query('INSERT INTO `us...', 0)
+#1 E:\Xampp\htdocs\codeigniter\nhahang\system\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 E:\Xampp\htdocs\codeigniter\nhahang\system\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 E:\Xampp\htdocs\codeigniter\nhahang\system\Database\BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 E:\Xampp\htdocs\codeigniter\nhahang\system\Model.php(383): CodeIgniter\Database\BaseBuilder->insert()
+#5 E:\Xampp\htdocs\codeigniter\nhahang\system\BaseModel.php(840): CodeIgniter\Model->doInsert(Array)
+#6 E:\Xampp\htdocs\codeigniter\nhahang\system\Model.php(791): CodeIgniter\BaseModel->insert(Array, false)
+#7 E:\Xampp\htdocs\codeigniter\nhahang\system\BaseModel.php(751): CodeIgniter\Model->insert(Array, false)
+#8 E:\Xampp\htdocs\codeigniter\nhahang\app\Controllers\account\AccountController.php(83): CodeIgniter\BaseModel->save(Array)
+#9 E:\Xampp\htdocs\codeigniter\nhahang\app\Controllers\account\AccountController.php(60): App\Controllers\account\AccountController->AddUserInfo(Object(CodeIgniter\HTTP\IncomingRequest))
+#10 E:\Xampp\htdocs\codeigniter\nhahang\system\CodeIgniter.php(933): App\Controllers\account\AccountController->create()
+#11 E:\Xampp\htdocs\codeigniter\nhahang\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\account\AccountController))
+#12 E:\Xampp\htdocs\codeigniter\nhahang\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 E:\Xampp\htdocs\codeigniter\nhahang\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#14 E:\Xampp\htdocs\codeigniter\nhahang\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#15 E:\Xampp\htdocs\codeigniter\nhahang\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#16 E:\Xampp\htdocs\codeigniter\nhahang\system\Commands\Server\rewrite.php(49): require_once('E:\\Xampp\\htdocs...')
+#17 {main}
+CRITICAL - 2024-11-27 04:09:21 --> CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`test`.`user`, CONSTRAINT `user_group_id_foreign` FOREIGN KEY (`group_id`) REFERENCES `group` (`group_id`) ON DELETE CASCADE ON UPDATE CASCADE)
+[Method: POST, Route: registed]
+in SYSTEMPATH\Database\BaseConnection.php on line 676.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `user` (`email`, `name`, `phone_number`, `password`, `is_admin`, `is_inside`, `group_id`) VALUES (:email:, :name:, :phone_number:, :password:, :is_admin:, :is_inside:, :group_id:)', [...], false)
+ 2 SYSTEMPATH\Model.php(383): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(791): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\account\AccountController.php(83): CodeIgniter\BaseModel->save([...])
+ 7 APPPATH\Controllers\account\AccountController.php(60): App\Controllers\account\AccountController->AddUserInfo(Object(CodeIgniter\HTTP\IncomingRequest))
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\account\AccountController->create()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\account\AccountController))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('E:\\Xampp\\htdocs\\codeigniter\\nhahang\\public\\index.php')
+CRITICAL - 2024-11-27 04:09:21 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`test`.`user`, CONSTRAINT `user_group_id_foreign` FOREIGN KEY (`group_id`) REFERENCES `group` (`group_id`) ON DELETE CASCADE ON UPDATE CASCADE)
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 313.
+ 1 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `user` (`email`, `name`, `phone_number`, `password`, `is_admin`, `is_inside`, `group_id`) VALUES (\'mottac1106@gmail.com\', \'Trung anh\', \'123456789\', \'$2y$10$eswcDSmvM46yQbXu3iCZYOf4deHBhsiGOu4VtjvNRTGhKPcYg5KkW\', \'0\', \'0\', \'\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `user` (`email`, `name`, `phone_number`, `password`, `is_admin`, `is_inside`, `group_id`) VALUES (\'mottac1106@gmail.com\', \'Trung anh\', \'123456789\', \'$2y$10$eswcDSmvM46yQbXu3iCZYOf4deHBhsiGOu4VtjvNRTGhKPcYg5KkW\', \'0\', \'0\', \'\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `user` (`email`, `name`, `phone_number`, `password`, `is_admin`, `is_inside`, `group_id`) VALUES (:email:, :name:, :phone_number:, :password:, :is_admin:, :is_inside:, :group_id:)', [...], false)
+ 4 SYSTEMPATH\Model.php(383): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(791): CodeIgniter\BaseModel->insert([...], false)
+ 7 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+ 8 APPPATH\Controllers\account\AccountController.php(83): CodeIgniter\BaseModel->save([...])
+ 9 APPPATH\Controllers\account\AccountController.php(60): App\Controllers\account\AccountController->AddUserInfo(Object(CodeIgniter\HTTP\IncomingRequest))
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\account\AccountController->create()
+11 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\account\AccountController))
+12 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+16 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('E:\\Xampp\\htdocs\\codeigniter\\nhahang\\public\\index.php')
+CRITICAL - 2024-11-27 04:09:21 --> [Caused by] mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`test`.`user`, CONSTRAINT `user_group_id_foreign` FOREIGN KEY (`group_id`) REFERENCES `group` (`group_id`) ON DELETE CASCADE ON UPDATE CASCADE)
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 308.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(308): mysqli->query('INSERT INTO `user` (`email`, `name`, `phone_number`, `password`, `is_admin`, `is_inside`, `group_id`) VALUES (\'mottac1106@gmail.com\', \'Trung anh\', \'123456789\', \'$2y$10$eswcDSmvM46yQbXu3iCZYOf4deHBhsiGOu4VtjvNRTGhKPcYg5KkW\', \'0\', \'0\', \'\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `user` (`email`, `name`, `phone_number`, `password`, `is_admin`, `is_inside`, `group_id`) VALUES (\'mottac1106@gmail.com\', \'Trung anh\', \'123456789\', \'$2y$10$eswcDSmvM46yQbXu3iCZYOf4deHBhsiGOu4VtjvNRTGhKPcYg5KkW\', \'0\', \'0\', \'\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `user` (`email`, `name`, `phone_number`, `password`, `is_admin`, `is_inside`, `group_id`) VALUES (\'mottac1106@gmail.com\', \'Trung anh\', \'123456789\', \'$2y$10$eswcDSmvM46yQbXu3iCZYOf4deHBhsiGOu4VtjvNRTGhKPcYg5KkW\', \'0\', \'0\', \'\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `user` (`email`, `name`, `phone_number`, `password`, `is_admin`, `is_inside`, `group_id`) VALUES (:email:, :name:, :phone_number:, :password:, :is_admin:, :is_inside:, :group_id:)', [...], false)
+ 5 SYSTEMPATH\Model.php(383): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(791): CodeIgniter\BaseModel->insert([...], false)
+ 8 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+ 9 APPPATH\Controllers\account\AccountController.php(83): CodeIgniter\BaseModel->save([...])
+10 APPPATH\Controllers\account\AccountController.php(60): App\Controllers\account\AccountController->AddUserInfo(Object(CodeIgniter\HTTP\IncomingRequest))
+11 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\account\AccountController->create()
+12 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\account\AccountController))
+13 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+17 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('E:\\Xampp\\htdocs\\codeigniter\\nhahang\\public\\index.php')
+ERROR - 2024-11-27 04:09:23 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`test`.`user`, CONSTRAINT `user_group_id_foreign` FOREIGN KEY (`group_id`) REFERENCES `group` (`group_id`) ON DELETE CASCADE ON UPDATE CASCADE) in E:\Xampp\htdocs\codeigniter\nhahang\system\Database\MySQLi\Connection.php:308
+Stack trace:
+#0 E:\Xampp\htdocs\codeigniter\nhahang\system\Database\MySQLi\Connection.php(308): mysqli->query('INSERT INTO `us...', 0)
+#1 E:\Xampp\htdocs\codeigniter\nhahang\system\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 E:\Xampp\htdocs\codeigniter\nhahang\system\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 E:\Xampp\htdocs\codeigniter\nhahang\system\Database\BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 E:\Xampp\htdocs\codeigniter\nhahang\system\Model.php(383): CodeIgniter\Database\BaseBuilder->insert()
+#5 E:\Xampp\htdocs\codeigniter\nhahang\system\BaseModel.php(840): CodeIgniter\Model->doInsert(Array)
+#6 E:\Xampp\htdocs\codeigniter\nhahang\system\Model.php(791): CodeIgniter\BaseModel->insert(Array, false)
+#7 E:\Xampp\htdocs\codeigniter\nhahang\system\BaseModel.php(751): CodeIgniter\Model->insert(Array, false)
+#8 E:\Xampp\htdocs\codeigniter\nhahang\app\Controllers\account\AccountController.php(83): CodeIgniter\BaseModel->save(Array)
+#9 E:\Xampp\htdocs\codeigniter\nhahang\app\Controllers\account\AccountController.php(60): App\Controllers\account\AccountController->AddUserInfo(Object(CodeIgniter\HTTP\IncomingRequest))
+#10 E:\Xampp\htdocs\codeigniter\nhahang\system\CodeIgniter.php(933): App\Controllers\account\AccountController->create()
+#11 E:\Xampp\htdocs\codeigniter\nhahang\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\account\AccountController))
+#12 E:\Xampp\htdocs\codeigniter\nhahang\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 E:\Xampp\htdocs\codeigniter\nhahang\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#14 E:\Xampp\htdocs\codeigniter\nhahang\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#15 E:\Xampp\htdocs\codeigniter\nhahang\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#16 E:\Xampp\htdocs\codeigniter\nhahang\system\Commands\Server\rewrite.php(49): require_once('E:\\Xampp\\htdocs...')
+#17 {main}
+CRITICAL - 2024-11-27 04:09:23 --> CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`test`.`user`, CONSTRAINT `user_group_id_foreign` FOREIGN KEY (`group_id`) REFERENCES `group` (`group_id`) ON DELETE CASCADE ON UPDATE CASCADE)
+[Method: POST, Route: registed]
+in SYSTEMPATH\Database\BaseConnection.php on line 676.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `user` (`email`, `name`, `phone_number`, `password`, `is_admin`, `is_inside`, `group_id`) VALUES (:email:, :name:, :phone_number:, :password:, :is_admin:, :is_inside:, :group_id:)', [...], false)
+ 2 SYSTEMPATH\Model.php(383): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(791): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\account\AccountController.php(83): CodeIgniter\BaseModel->save([...])
+ 7 APPPATH\Controllers\account\AccountController.php(60): App\Controllers\account\AccountController->AddUserInfo(Object(CodeIgniter\HTTP\IncomingRequest))
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\account\AccountController->create()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\account\AccountController))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('E:\\Xampp\\htdocs\\codeigniter\\nhahang\\public\\index.php')
+CRITICAL - 2024-11-27 04:09:23 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`test`.`user`, CONSTRAINT `user_group_id_foreign` FOREIGN KEY (`group_id`) REFERENCES `group` (`group_id`) ON DELETE CASCADE ON UPDATE CASCADE)
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 313.
+ 1 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `user` (`email`, `name`, `phone_number`, `password`, `is_admin`, `is_inside`, `group_id`) VALUES (\'mottac1106@gmail.com\', \'Trung anh\', \'123456789\', \'$2y$10$V1InIwzSzFd8Z76kei9bw.umC7pc00iMn6asghznm38slLzxh0ft2\', \'0\', \'0\', \'\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `user` (`email`, `name`, `phone_number`, `password`, `is_admin`, `is_inside`, `group_id`) VALUES (\'mottac1106@gmail.com\', \'Trung anh\', \'123456789\', \'$2y$10$V1InIwzSzFd8Z76kei9bw.umC7pc00iMn6asghznm38slLzxh0ft2\', \'0\', \'0\', \'\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `user` (`email`, `name`, `phone_number`, `password`, `is_admin`, `is_inside`, `group_id`) VALUES (:email:, :name:, :phone_number:, :password:, :is_admin:, :is_inside:, :group_id:)', [...], false)
+ 4 SYSTEMPATH\Model.php(383): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(791): CodeIgniter\BaseModel->insert([...], false)
+ 7 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+ 8 APPPATH\Controllers\account\AccountController.php(83): CodeIgniter\BaseModel->save([...])
+ 9 APPPATH\Controllers\account\AccountController.php(60): App\Controllers\account\AccountController->AddUserInfo(Object(CodeIgniter\HTTP\IncomingRequest))
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\account\AccountController->create()
+11 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\account\AccountController))
+12 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+16 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('E:\\Xampp\\htdocs\\codeigniter\\nhahang\\public\\index.php')
+CRITICAL - 2024-11-27 04:09:23 --> [Caused by] mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`test`.`user`, CONSTRAINT `user_group_id_foreign` FOREIGN KEY (`group_id`) REFERENCES `group` (`group_id`) ON DELETE CASCADE ON UPDATE CASCADE)
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 308.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(308): mysqli->query('INSERT INTO `user` (`email`, `name`, `phone_number`, `password`, `is_admin`, `is_inside`, `group_id`) VALUES (\'mottac1106@gmail.com\', \'Trung anh\', \'123456789\', \'$2y$10$V1InIwzSzFd8Z76kei9bw.umC7pc00iMn6asghznm38slLzxh0ft2\', \'0\', \'0\', \'\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `user` (`email`, `name`, `phone_number`, `password`, `is_admin`, `is_inside`, `group_id`) VALUES (\'mottac1106@gmail.com\', \'Trung anh\', \'123456789\', \'$2y$10$V1InIwzSzFd8Z76kei9bw.umC7pc00iMn6asghznm38slLzxh0ft2\', \'0\', \'0\', \'\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `user` (`email`, `name`, `phone_number`, `password`, `is_admin`, `is_inside`, `group_id`) VALUES (\'mottac1106@gmail.com\', \'Trung anh\', \'123456789\', \'$2y$10$V1InIwzSzFd8Z76kei9bw.umC7pc00iMn6asghznm38slLzxh0ft2\', \'0\', \'0\', \'\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `user` (`email`, `name`, `phone_number`, `password`, `is_admin`, `is_inside`, `group_id`) VALUES (:email:, :name:, :phone_number:, :password:, :is_admin:, :is_inside:, :group_id:)', [...], false)
+ 5 SYSTEMPATH\Model.php(383): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(791): CodeIgniter\BaseModel->insert([...], false)
+ 8 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+ 9 APPPATH\Controllers\account\AccountController.php(83): CodeIgniter\BaseModel->save([...])
+10 APPPATH\Controllers\account\AccountController.php(60): App\Controllers\account\AccountController->AddUserInfo(Object(CodeIgniter\HTTP\IncomingRequest))
+11 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\account\AccountController->create()
+12 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\account\AccountController))
+13 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+17 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('E:\\Xampp\\htdocs\\codeigniter\\nhahang\\public\\index.php')
+INFO - 2024-11-27 04:09:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-11-27 04:09:28 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`test`.`user`, CONSTRAINT `user_group_id_foreign` FOREIGN KEY (`group_id`) REFERENCES `group` (`group_id`) ON DELETE CASCADE ON UPDATE CASCADE) in E:\Xampp\htdocs\codeigniter\nhahang\system\Database\MySQLi\Connection.php:308
+Stack trace:
+#0 E:\Xampp\htdocs\codeigniter\nhahang\system\Database\MySQLi\Connection.php(308): mysqli->query('INSERT INTO `us...', 0)
+#1 E:\Xampp\htdocs\codeigniter\nhahang\system\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 E:\Xampp\htdocs\codeigniter\nhahang\system\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 E:\Xampp\htdocs\codeigniter\nhahang\system\Database\BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 E:\Xampp\htdocs\codeigniter\nhahang\system\Model.php(383): CodeIgniter\Database\BaseBuilder->insert()
+#5 E:\Xampp\htdocs\codeigniter\nhahang\system\BaseModel.php(840): CodeIgniter\Model->doInsert(Array)
+#6 E:\Xampp\htdocs\codeigniter\nhahang\system\Model.php(791): CodeIgniter\BaseModel->insert(Array, false)
+#7 E:\Xampp\htdocs\codeigniter\nhahang\system\BaseModel.php(751): CodeIgniter\Model->insert(Array, false)
+#8 E:\Xampp\htdocs\codeigniter\nhahang\app\Controllers\account\AccountController.php(83): CodeIgniter\BaseModel->save(Array)
+#9 E:\Xampp\htdocs\codeigniter\nhahang\app\Controllers\account\AccountController.php(60): App\Controllers\account\AccountController->AddUserInfo(Object(CodeIgniter\HTTP\IncomingRequest))
+#10 E:\Xampp\htdocs\codeigniter\nhahang\system\CodeIgniter.php(933): App\Controllers\account\AccountController->create()
+#11 E:\Xampp\htdocs\codeigniter\nhahang\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\account\AccountController))
+#12 E:\Xampp\htdocs\codeigniter\nhahang\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 E:\Xampp\htdocs\codeigniter\nhahang\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#14 E:\Xampp\htdocs\codeigniter\nhahang\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#15 E:\Xampp\htdocs\codeigniter\nhahang\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#16 E:\Xampp\htdocs\codeigniter\nhahang\system\Commands\Server\rewrite.php(49): require_once('E:\\Xampp\\htdocs...')
+#17 {main}
+CRITICAL - 2024-11-27 04:09:28 --> CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`test`.`user`, CONSTRAINT `user_group_id_foreign` FOREIGN KEY (`group_id`) REFERENCES `group` (`group_id`) ON DELETE CASCADE ON UPDATE CASCADE)
+[Method: POST, Route: registed]
+in SYSTEMPATH\Database\BaseConnection.php on line 676.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `user` (`email`, `name`, `phone_number`, `password`, `is_admin`, `is_inside`, `group_id`) VALUES (:email:, :name:, :phone_number:, :password:, :is_admin:, :is_inside:, :group_id:)', [...], false)
+ 2 SYSTEMPATH\Model.php(383): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(791): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\account\AccountController.php(83): CodeIgniter\BaseModel->save([...])
+ 7 APPPATH\Controllers\account\AccountController.php(60): App\Controllers\account\AccountController->AddUserInfo(Object(CodeIgniter\HTTP\IncomingRequest))
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\account\AccountController->create()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\account\AccountController))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('E:\\Xampp\\htdocs\\codeigniter\\nhahang\\public\\index.php')
+CRITICAL - 2024-11-27 04:09:28 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`test`.`user`, CONSTRAINT `user_group_id_foreign` FOREIGN KEY (`group_id`) REFERENCES `group` (`group_id`) ON DELETE CASCADE ON UPDATE CASCADE)
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 313.
+ 1 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `user` (`email`, `name`, `phone_number`, `password`, `is_admin`, `is_inside`, `group_id`) VALUES (\'mottac1106@gmail.com\', \'Trung anh\', \'123456789\', \'$2y$10$39ewItpLBssl3U1U7j0LgOwq0Ji9e9EFKG099ZvrxUeyeOXHFg6Bm\', \'0\', \'0\', \'\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `user` (`email`, `name`, `phone_number`, `password`, `is_admin`, `is_inside`, `group_id`) VALUES (\'mottac1106@gmail.com\', \'Trung anh\', \'123456789\', \'$2y$10$39ewItpLBssl3U1U7j0LgOwq0Ji9e9EFKG099ZvrxUeyeOXHFg6Bm\', \'0\', \'0\', \'\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `user` (`email`, `name`, `phone_number`, `password`, `is_admin`, `is_inside`, `group_id`) VALUES (:email:, :name:, :phone_number:, :password:, :is_admin:, :is_inside:, :group_id:)', [...], false)
+ 4 SYSTEMPATH\Model.php(383): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(791): CodeIgniter\BaseModel->insert([...], false)
+ 7 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+ 8 APPPATH\Controllers\account\AccountController.php(83): CodeIgniter\BaseModel->save([...])
+ 9 APPPATH\Controllers\account\AccountController.php(60): App\Controllers\account\AccountController->AddUserInfo(Object(CodeIgniter\HTTP\IncomingRequest))
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\account\AccountController->create()
+11 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\account\AccountController))
+12 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+16 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('E:\\Xampp\\htdocs\\codeigniter\\nhahang\\public\\index.php')
+CRITICAL - 2024-11-27 04:09:28 --> [Caused by] mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`test`.`user`, CONSTRAINT `user_group_id_foreign` FOREIGN KEY (`group_id`) REFERENCES `group` (`group_id`) ON DELETE CASCADE ON UPDATE CASCADE)
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 308.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(308): mysqli->query('INSERT INTO `user` (`email`, `name`, `phone_number`, `password`, `is_admin`, `is_inside`, `group_id`) VALUES (\'mottac1106@gmail.com\', \'Trung anh\', \'123456789\', \'$2y$10$39ewItpLBssl3U1U7j0LgOwq0Ji9e9EFKG099ZvrxUeyeOXHFg6Bm\', \'0\', \'0\', \'\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `user` (`email`, `name`, `phone_number`, `password`, `is_admin`, `is_inside`, `group_id`) VALUES (\'mottac1106@gmail.com\', \'Trung anh\', \'123456789\', \'$2y$10$39ewItpLBssl3U1U7j0LgOwq0Ji9e9EFKG099ZvrxUeyeOXHFg6Bm\', \'0\', \'0\', \'\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `user` (`email`, `name`, `phone_number`, `password`, `is_admin`, `is_inside`, `group_id`) VALUES (\'mottac1106@gmail.com\', \'Trung anh\', \'123456789\', \'$2y$10$39ewItpLBssl3U1U7j0LgOwq0Ji9e9EFKG099ZvrxUeyeOXHFg6Bm\', \'0\', \'0\', \'\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `user` (`email`, `name`, `phone_number`, `password`, `is_admin`, `is_inside`, `group_id`) VALUES (:email:, :name:, :phone_number:, :password:, :is_admin:, :is_inside:, :group_id:)', [...], false)
+ 5 SYSTEMPATH\Model.php(383): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(791): CodeIgniter\BaseModel->insert([...], false)
+ 8 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+ 9 APPPATH\Controllers\account\AccountController.php(83): CodeIgniter\BaseModel->save([...])
+10 APPPATH\Controllers\account\AccountController.php(60): App\Controllers\account\AccountController->AddUserInfo(Object(CodeIgniter\HTTP\IncomingRequest))
+11 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\account\AccountController->create()
+12 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\account\AccountController))
+13 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+17 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('E:\\Xampp\\htdocs\\codeigniter\\nhahang\\public\\index.php')
+INFO - 2024-11-27 04:11:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-27 04:11:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-27 07:54:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-27 07:54:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-27 07:54:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-27 07:54:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-27 07:54:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-27 07:54:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-27 07:54:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-27 08:01:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-27 08:05:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-27 08:05:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-27 08:05:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-27 08:05:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-27 08:05:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-27 08:08:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-27 08:10:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-27 08:10:20 --> ErrorException: Undefined variable $pager
+[Method: GET, Route: dashboard/user]
+in APPPATH\Views\admin\user\table.php on line 90.
+ 1 APPPATH\Views\admin\user\table.php(90): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $pager', 'E:\\Xampp\\htdocs\\codeigniter\\nhahang\\app\\Views\\admin\\user\\table.php', 90)
+ 2 SYSTEMPATH\View\View.php(234): include('E:\\Xampp\\htdocs\\codeigniter\\nhahang\\app\\Views\\admin\\user\\table.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('admin/user/table', [], true)
+ 5 APPPATH\Controllers\dashboard\User\UserDataController.php(38): view('admin/user/table', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\dashboard\User\UserDataController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\dashboard\User\UserDataController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('E:\\Xampp\\htdocs\\codeigniter\\nhahang\\public\\index.php')
+INFO - 2024-11-27 08:15:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-27 08:15:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-27 08:15:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-27 08:15:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-27 08:15:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-27 08:17:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-27 08:17:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-27 08:20:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-27 08:21:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-27 08:22:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-27 08:24:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-27 08:25:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-27 08:25:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-27 08:26:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-27 08:26:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-27 08:26:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-27 08:26:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-27 08:27:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-27 08:27:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

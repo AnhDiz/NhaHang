@@ -1,0 +1,384 @@
+INFO - 2024-11-15 07:25:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-15 07:25:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-15 07:25:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-15 07:25:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-15 07:25:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-15 07:26:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-15 07:26:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-15 07:39:28 --> Error: Object of type CodeIgniter\Router\RouteCollection is not callable
+[Method: GET, Route: /]
+in APPPATH\Config\Routes.php on line 15.
+ 1 SYSTEMPATH\Router\RouteCollection.php(800): CodeIgniter\Router\RouteCollection->{closure}(Object(CodeIgniter\Router\RouteCollection))
+ 2 APPPATH\Config\Routes.php(14): CodeIgniter\Router\RouteCollection->group('main', [...], Object(Closure))
+ 3 SYSTEMPATH\Router\RouteCollection.php(340): require('E:\\Xampp\\htdocs\\codeigniter\\nhahang\\app\\Config\\Routes.php')
+ 4 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('E:\\Xampp\\htdocs\\codeigniter\\nhahang\\public\\index.php')
+CRITICAL - 2024-11-15 07:41:58 --> Error: Object of type CodeIgniter\Router\RouteCollection is not callable
+[Method: GET, Route: /]
+in APPPATH\Config\Routes.php on line 15.
+ 1 SYSTEMPATH\Router\RouteCollection.php(800): CodeIgniter\Router\RouteCollection->{closure}(Object(CodeIgniter\Router\RouteCollection))
+ 2 APPPATH\Config\Routes.php(14): CodeIgniter\Router\RouteCollection->group('main', [...], Object(Closure))
+ 3 SYSTEMPATH\Router\RouteCollection.php(340): require('E:\\Xampp\\htdocs\\codeigniter\\nhahang\\app\\Config\\Routes.php')
+ 4 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('E:\\Xampp\\htdocs\\codeigniter\\nhahang\\public\\index.php')
+CRITICAL - 2024-11-15 07:42:41 --> CodeIgniter\Filters\Exceptions\FilterException: "main" filter must have a matching alias defined.
+[Method: GET, Route: main/about]
+in SYSTEMPATH\Filters\Filters.php on line 495.
+ 1 SYSTEMPATH\Filters\Filters.php(495): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('main')
+ 2 SYSTEMPATH\Filters\Filters.php(547): CodeIgniter\Filters\Filters->enableFilter('main', 'before')
+ 3 SYSTEMPATH\CodeIgniter.php(469): CodeIgniter\Filters\Filters->enableFilters([...], 'before')
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('E:\\Xampp\\htdocs\\codeigniter\\nhahang\\public\\index.php')
+CRITICAL - 2024-11-15 07:51:00 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "main/testmonial.php"
+[Method: GET, Route: main/testmonial]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('main/testmonial.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('main/testmonial', [], true)
+ 3 APPPATH\Controllers\Home.php(41): view('main/testmonial')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->testmonial()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('E:\\Xampp\\htdocs\\codeigniter\\nhahang\\public\\index.php')
+INFO - 2024-11-15 07:56:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-15 07:56:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-15 07:56:28 --> ErrorException: Undefined variable $perPage
+[Method: GET, Route: dashboard/material]
+in APPPATH\Views\admin\materials\table.php on line 16.
+ 1 APPPATH\Views\admin\materials\table.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $perPage', 'E:\\Xampp\\htdocs\\codeigniter\\nhahang\\app\\Views\\admin\\materials\\table.php', 16)
+ 2 SYSTEMPATH\View\View.php(234): include('E:\\Xampp\\htdocs\\codeigniter\\nhahang\\app\\Views\\admin\\materials\\table.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('admin/materials/table', [], true)
+ 5 APPPATH\Controllers\dashboard\Material\MaterialController.php(20): view('admin/materials/table', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\dashboard\Material\MaterialController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\dashboard\Material\MaterialController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('E:\\Xampp\\htdocs\\codeigniter\\nhahang\\public\\index.php')
+INFO - 2024-11-15 07:59:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-15 07:59:55 --> ErrorException: Undefined variable $perPage
+[Method: GET, Route: dashboard/permission]
+in APPPATH\Views\admin\permission\table.php on line 14.
+ 1 APPPATH\Views\admin\permission\table.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $perPage', 'E:\\Xampp\\htdocs\\codeigniter\\nhahang\\app\\Views\\admin\\permission\\table.php', 14)
+ 2 SYSTEMPATH\View\View.php(234): include('E:\\Xampp\\htdocs\\codeigniter\\nhahang\\app\\Views\\admin\\permission\\table.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('admin/permission/table', [], true)
+ 5 APPPATH\Controllers\dashboard\Permission\PermissionController.php(28): view('admin/permission/table', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Dashboard\Permission\PermissionController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard\Permission\PermissionController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('E:\\Xampp\\htdocs\\codeigniter\\nhahang\\public\\index.php')
+INFO - 2024-11-15 08:02:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-15 08:02:00 --> ErrorException: Undefined variable $perPage
+[Method: GET, Route: dashboard/permission]
+in APPPATH\Views\admin\permission\table.php on line 14.
+ 1 APPPATH\Views\admin\permission\table.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $perPage', 'E:\\Xampp\\htdocs\\codeigniter\\nhahang\\app\\Views\\admin\\permission\\table.php', 14)
+ 2 SYSTEMPATH\View\View.php(234): include('E:\\Xampp\\htdocs\\codeigniter\\nhahang\\app\\Views\\admin\\permission\\table.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('admin/permission/table', [], true)
+ 5 APPPATH\Controllers\dashboard\Permission\PermissionController.php(28): view('admin/permission/table', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Dashboard\Permission\PermissionController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard\Permission\PermissionController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('E:\\Xampp\\htdocs\\codeigniter\\nhahang\\public\\index.php')
+INFO - 2024-11-15 08:02:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-15 08:02:07 --> ErrorException: Undefined variable $perPage
+[Method: GET, Route: dashboard/permission]
+in APPPATH\Views\admin\permission\table.php on line 14.
+ 1 APPPATH\Views\admin\permission\table.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $perPage', 'E:\\Xampp\\htdocs\\codeigniter\\nhahang\\app\\Views\\admin\\permission\\table.php', 14)
+ 2 SYSTEMPATH\View\View.php(234): include('E:\\Xampp\\htdocs\\codeigniter\\nhahang\\app\\Views\\admin\\permission\\table.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('admin/permission/table', [], true)
+ 5 APPPATH\Controllers\dashboard\Permission\PermissionController.php(28): view('admin/permission/table', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Dashboard\Permission\PermissionController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard\Permission\PermissionController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('E:\\Xampp\\htdocs\\codeigniter\\nhahang\\public\\index.php')
+INFO - 2024-11-15 08:02:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-15 08:02:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-15 08:02:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-15 08:02:21 --> ErrorException: Undefined variable $perPage
+[Method: GET, Route: dashboard/permission]
+in APPPATH\Views\admin\permission\table.php on line 14.
+ 1 APPPATH\Views\admin\permission\table.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $perPage', 'E:\\Xampp\\htdocs\\codeigniter\\nhahang\\app\\Views\\admin\\permission\\table.php', 14)
+ 2 SYSTEMPATH\View\View.php(234): include('E:\\Xampp\\htdocs\\codeigniter\\nhahang\\app\\Views\\admin\\permission\\table.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('admin/permission/table', [], true)
+ 5 APPPATH\Controllers\dashboard\Permission\PermissionController.php(28): view('admin/permission/table', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Dashboard\Permission\PermissionController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard\Permission\PermissionController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('E:\\Xampp\\htdocs\\codeigniter\\nhahang\\public\\index.php')
+INFO - 2024-11-15 08:04:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-15 08:05:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-15 08:05:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-15 08:05:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-15 08:08:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-15 08:08:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-15 08:09:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-15 08:09:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-15 08:10:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-15 08:10:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-15 08:13:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-15 08:13:57 --> ErrorException: Undefined variable $user
+[Method: GET, Route: dashboard/user/add]
+in APPPATH\Views\admin\user\add.php on line 33.
+ 1 APPPATH\Views\admin\user\add.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $user', 'E:\\Xampp\\htdocs\\codeigniter\\nhahang\\app\\Views\\admin\\user\\add.php', 33)
+ 2 SYSTEMPATH\View\View.php(234): include('E:\\Xampp\\htdocs\\codeigniter\\nhahang\\app\\Views\\admin\\user\\add.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('admin/user/add', [], true)
+ 5 APPPATH\Controllers\dashboard\User\UserDataController.php(45): view('admin/user/add', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\dashboard\User\UserDataController->Add()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\dashboard\User\UserDataController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('E:\\Xampp\\htdocs\\codeigniter\\nhahang\\public\\index.php')
+INFO - 2024-11-15 08:14:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-15 08:15:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-15 08:17:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-15 08:17:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-15 08:17:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-15 08:17:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-15 08:21:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-15 08:22:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-15 08:22:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-15 08:22:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-11-15 08:22:24 --> mysqli_sql_exception: Table 'test.users' doesn't exist in E:\Xampp\htdocs\codeigniter\nhahang\system\Database\MySQLi\Connection.php:308
+Stack trace:
+#0 E:\Xampp\htdocs\codeigniter\nhahang\system\Database\MySQLi\Connection.php(308): mysqli->query('SELECT 1\nFROM `...', 0)
+#1 E:\Xampp\htdocs\codeigniter\nhahang\system\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1\nFROM `...')
+#2 E:\Xampp\htdocs\codeigniter\nhahang\system\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1\nFROM `...')
+#3 E:\Xampp\htdocs\codeigniter\nhahang\system\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#4 E:\Xampp\htdocs\codeigniter\nhahang\system\Validation\StrictRules\Rules.php(228): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\Xampp\htdocs\codeigniter\nhahang\system\Validation\Validation.php(336): CodeIgniter\Validation\StrictRules\Rules->is_unique('tuan@gmail.com', 'email', Array, NULL, 'email')
+#6 E:\Xampp\htdocs\codeigniter\nhahang\system\Validation\Validation.php(201): CodeIgniter\Validation\Validation->processRules('email', 'email', 'tuan@gmail.com', Array, Array, 'email')
+#7 E:\Xampp\htdocs\codeigniter\nhahang\app\Controllers\dashboard\User\UserDataController.php(107): CodeIgniter\Validation\Validation->run()
+#8 E:\Xampp\htdocs\codeigniter\nhahang\app\Controllers\dashboard\User\UserDataController.php(53): App\Controllers\dashboard\User\UserDataController->ValidateAddUser(Object(CodeIgniter\HTTP\IncomingRequest))
+#9 E:\Xampp\htdocs\codeigniter\nhahang\app\Controllers\dashboard\User\UserDataController.php(48): App\Controllers\dashboard\User\UserDataController->AddUserInfo(Object(CodeIgniter\HTTP\IncomingRequest))
+#10 E:\Xampp\htdocs\codeigniter\nhahang\system\CodeIgniter.php(933): App\Controllers\dashboard\User\UserDataController->create()
+#11 E:\Xampp\htdocs\codeigniter\nhahang\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\dashboard\User\UserDataController))
+#12 E:\Xampp\htdocs\codeigniter\nhahang\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 E:\Xampp\htdocs\codeigniter\nhahang\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#14 E:\Xampp\htdocs\codeigniter\nhahang\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#15 E:\Xampp\htdocs\codeigniter\nhahang\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#16 E:\Xampp\htdocs\codeigniter\nhahang\system\Commands\Server\rewrite.php(49): require_once('E:\\Xampp\\htdocs...')
+#17 {main}
+CRITICAL - 2024-11-15 08:22:24 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'test.users' doesn't exist
+[Method: POST, Route: dashboard/user/create]
+in SYSTEMPATH\Database\BaseConnection.php on line 676.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `users`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 2 SYSTEMPATH\Validation\StrictRules\Rules.php(228): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\Validation\Validation.php(336): CodeIgniter\Validation\StrictRules\Rules->is_unique('tuan@gmail.com', 'email', [...], null, 'email')
+ 4 SYSTEMPATH\Validation\Validation.php(201): CodeIgniter\Validation\Validation->processRules('email', 'email', 'tuan@gmail.com', [...], [...], 'email')
+ 5 APPPATH\Controllers\dashboard\User\UserDataController.php(107): CodeIgniter\Validation\Validation->run()
+ 6 APPPATH\Controllers\dashboard\User\UserDataController.php(53): App\Controllers\dashboard\User\UserDataController->ValidateAddUser(Object(CodeIgniter\HTTP\IncomingRequest))
+ 7 APPPATH\Controllers\dashboard\User\UserDataController.php(48): App\Controllers\dashboard\User\UserDataController->AddUserInfo(Object(CodeIgniter\HTTP\IncomingRequest))
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\dashboard\User\UserDataController->create()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\dashboard\User\UserDataController))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('E:\\Xampp\\htdocs\\codeigniter\\nhahang\\public\\index.php')
+CRITICAL - 2024-11-15 08:22:24 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'test.users' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 313.
+ 1 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1
+FROM `users`
+WHERE `email` = \'tuan@gmail.com\'
+ LIMIT 1')
+ 2 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1
+FROM `users`
+WHERE `email` = \'tuan@gmail.com\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `users`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 4 SYSTEMPATH\Validation\StrictRules\Rules.php(228): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\Validation\Validation.php(336): CodeIgniter\Validation\StrictRules\Rules->is_unique('tuan@gmail.com', 'email', [...], null, 'email')
+ 6 SYSTEMPATH\Validation\Validation.php(201): CodeIgniter\Validation\Validation->processRules('email', 'email', 'tuan@gmail.com', [...], [...], 'email')
+ 7 APPPATH\Controllers\dashboard\User\UserDataController.php(107): CodeIgniter\Validation\Validation->run()
+ 8 APPPATH\Controllers\dashboard\User\UserDataController.php(53): App\Controllers\dashboard\User\UserDataController->ValidateAddUser(Object(CodeIgniter\HTTP\IncomingRequest))
+ 9 APPPATH\Controllers\dashboard\User\UserDataController.php(48): App\Controllers\dashboard\User\UserDataController->AddUserInfo(Object(CodeIgniter\HTTP\IncomingRequest))
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\dashboard\User\UserDataController->create()
+11 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\dashboard\User\UserDataController))
+12 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+16 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('E:\\Xampp\\htdocs\\codeigniter\\nhahang\\public\\index.php')
+CRITICAL - 2024-11-15 08:22:24 --> [Caused by] mysqli_sql_exception: Table 'test.users' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 308.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(308): mysqli->query('SELECT 1
+FROM `users`
+WHERE `email` = \'tuan@gmail.com\'
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1
+FROM `users`
+WHERE `email` = \'tuan@gmail.com\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1
+FROM `users`
+WHERE `email` = \'tuan@gmail.com\'
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `users`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH\Validation\StrictRules\Rules.php(228): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\Validation\Validation.php(336): CodeIgniter\Validation\StrictRules\Rules->is_unique('tuan@gmail.com', 'email', [...], null, 'email')
+ 7 SYSTEMPATH\Validation\Validation.php(201): CodeIgniter\Validation\Validation->processRules('email', 'email', 'tuan@gmail.com', [...], [...], 'email')
+ 8 APPPATH\Controllers\dashboard\User\UserDataController.php(107): CodeIgniter\Validation\Validation->run()
+ 9 APPPATH\Controllers\dashboard\User\UserDataController.php(53): App\Controllers\dashboard\User\UserDataController->ValidateAddUser(Object(CodeIgniter\HTTP\IncomingRequest))
+10 APPPATH\Controllers\dashboard\User\UserDataController.php(48): App\Controllers\dashboard\User\UserDataController->AddUserInfo(Object(CodeIgniter\HTTP\IncomingRequest))
+11 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\dashboard\User\UserDataController->create()
+12 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\dashboard\User\UserDataController))
+13 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+17 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('E:\\Xampp\\htdocs\\codeigniter\\nhahang\\public\\index.php')
+INFO - 2024-11-15 08:24:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-15 08:25:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-11-15 08:25:03 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`test`.`user`, CONSTRAINT `user_group_id_foreign` FOREIGN KEY (`group_id`) REFERENCES `group` (`group_id`) ON DELETE CASCADE ON UPDATE CASCADE) in E:\Xampp\htdocs\codeigniter\nhahang\system\Database\MySQLi\Connection.php:308
+Stack trace:
+#0 E:\Xampp\htdocs\codeigniter\nhahang\system\Database\MySQLi\Connection.php(308): mysqli->query('INSERT INTO `us...', 0)
+#1 E:\Xampp\htdocs\codeigniter\nhahang\system\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 E:\Xampp\htdocs\codeigniter\nhahang\system\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 E:\Xampp\htdocs\codeigniter\nhahang\system\Database\BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 E:\Xampp\htdocs\codeigniter\nhahang\system\Model.php(383): CodeIgniter\Database\BaseBuilder->insert()
+#5 E:\Xampp\htdocs\codeigniter\nhahang\system\BaseModel.php(840): CodeIgniter\Model->doInsert(Array)
+#6 E:\Xampp\htdocs\codeigniter\nhahang\system\Model.php(791): CodeIgniter\BaseModel->insert(Array, false)
+#7 E:\Xampp\htdocs\codeigniter\nhahang\system\BaseModel.php(751): CodeIgniter\Model->insert(Array, false)
+#8 E:\Xampp\htdocs\codeigniter\nhahang\app\Controllers\dashboard\User\UserDataController.php(70): CodeIgniter\BaseModel->save(Array)
+#9 E:\Xampp\htdocs\codeigniter\nhahang\app\Controllers\dashboard\User\UserDataController.php(48): App\Controllers\dashboard\User\UserDataController->AddUserInfo(Object(CodeIgniter\HTTP\IncomingRequest))
+#10 E:\Xampp\htdocs\codeigniter\nhahang\system\CodeIgniter.php(933): App\Controllers\dashboard\User\UserDataController->create()
+#11 E:\Xampp\htdocs\codeigniter\nhahang\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\dashboard\User\UserDataController))
+#12 E:\Xampp\htdocs\codeigniter\nhahang\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 E:\Xampp\htdocs\codeigniter\nhahang\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#14 E:\Xampp\htdocs\codeigniter\nhahang\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#15 E:\Xampp\htdocs\codeigniter\nhahang\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#16 E:\Xampp\htdocs\codeigniter\nhahang\system\Commands\Server\rewrite.php(49): require_once('E:\\Xampp\\htdocs...')
+#17 {main}
+CRITICAL - 2024-11-15 08:25:03 --> CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`test`.`user`, CONSTRAINT `user_group_id_foreign` FOREIGN KEY (`group_id`) REFERENCES `group` (`group_id`) ON DELETE CASCADE ON UPDATE CASCADE)
+[Method: POST, Route: dashboard/user/create]
+in SYSTEMPATH\Database\BaseConnection.php on line 676.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `user` (`is_admin`, `is_inside`) VALUES (:is_admin:, :is_inside:)', [...], false)
+ 2 SYSTEMPATH\Model.php(383): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(791): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\dashboard\User\UserDataController.php(70): CodeIgniter\BaseModel->save([...])
+ 7 APPPATH\Controllers\dashboard\User\UserDataController.php(48): App\Controllers\dashboard\User\UserDataController->AddUserInfo(Object(CodeIgniter\HTTP\IncomingRequest))
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\dashboard\User\UserDataController->create()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\dashboard\User\UserDataController))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('E:\\Xampp\\htdocs\\codeigniter\\nhahang\\public\\index.php')
+CRITICAL - 2024-11-15 08:25:03 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`test`.`user`, CONSTRAINT `user_group_id_foreign` FOREIGN KEY (`group_id`) REFERENCES `group` (`group_id`) ON DELETE CASCADE ON UPDATE CASCADE)
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 313.
+ 1 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `user` (`is_admin`, `is_inside`) VALUES (\'0\', \'1\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `user` (`is_admin`, `is_inside`) VALUES (\'0\', \'1\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `user` (`is_admin`, `is_inside`) VALUES (:is_admin:, :is_inside:)', [...], false)
+ 4 SYSTEMPATH\Model.php(383): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(791): CodeIgniter\BaseModel->insert([...], false)
+ 7 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+ 8 APPPATH\Controllers\dashboard\User\UserDataController.php(70): CodeIgniter\BaseModel->save([...])
+ 9 APPPATH\Controllers\dashboard\User\UserDataController.php(48): App\Controllers\dashboard\User\UserDataController->AddUserInfo(Object(CodeIgniter\HTTP\IncomingRequest))
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\dashboard\User\UserDataController->create()
+11 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\dashboard\User\UserDataController))
+12 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+16 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('E:\\Xampp\\htdocs\\codeigniter\\nhahang\\public\\index.php')
+CRITICAL - 2024-11-15 08:25:03 --> [Caused by] mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`test`.`user`, CONSTRAINT `user_group_id_foreign` FOREIGN KEY (`group_id`) REFERENCES `group` (`group_id`) ON DELETE CASCADE ON UPDATE CASCADE)
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 308.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(308): mysqli->query('INSERT INTO `user` (`is_admin`, `is_inside`) VALUES (\'0\', \'1\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `user` (`is_admin`, `is_inside`) VALUES (\'0\', \'1\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `user` (`is_admin`, `is_inside`) VALUES (\'0\', \'1\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `user` (`is_admin`, `is_inside`) VALUES (:is_admin:, :is_inside:)', [...], false)
+ 5 SYSTEMPATH\Model.php(383): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(791): CodeIgniter\BaseModel->insert([...], false)
+ 8 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+ 9 APPPATH\Controllers\dashboard\User\UserDataController.php(70): CodeIgniter\BaseModel->save([...])
+10 APPPATH\Controllers\dashboard\User\UserDataController.php(48): App\Controllers\dashboard\User\UserDataController->AddUserInfo(Object(CodeIgniter\HTTP\IncomingRequest))
+11 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\dashboard\User\UserDataController->create()
+12 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\dashboard\User\UserDataController))
+13 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+17 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('E:\\Xampp\\htdocs\\codeigniter\\nhahang\\public\\index.php')
+INFO - 2024-11-15 08:27:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-15 08:27:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-15 08:27:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-15 08:27:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-15 08:27:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-15 08:30:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-15 08:30:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-15 08:30:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-15 08:31:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-15 08:31:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-15 08:31:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-15 08:31:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-15 08:31:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-15 08:32:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-15 08:32:51 --> ErrorException: Undefined variable $types
+[Method: GET, Route: dashboard/materialtype]
+in APPPATH\Views\admin\materialtype\table.php on line 41.
+ 1 APPPATH\Views\admin\materialtype\table.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $types', 'E:\\Xampp\\htdocs\\codeigniter\\nhahang\\app\\Views\\admin\\materialtype\\table.php', 41)
+ 2 SYSTEMPATH\View\View.php(234): include('E:\\Xampp\\htdocs\\codeigniter\\nhahang\\app\\Views\\admin\\materialtype\\table.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('admin/materialtype/table', [], true)
+ 5 APPPATH\Controllers\dashboard\Material\MaterialTypeController.php(30): view('admin/materialtype/table', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\dashboard\Material\MaterialTypeController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\dashboard\Material\MaterialTypeController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('E:\\Xampp\\htdocs\\codeigniter\\nhahang\\public\\index.php')
+INFO - 2024-11-15 08:32:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-15 08:32:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-15 08:33:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-15 08:33:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-15 08:33:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

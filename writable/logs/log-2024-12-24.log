@@ -1,0 +1,96 @@
+ERROR - 2024-12-24 20:30:08 --> mysqli_sql_exception: Incorrect table definition; there can be only one auto column and it must be defined as a key in E:\Xampp\htdocs\codeigniter\nhahang\system\Database\MySQLi\Connection.php:308
+Stack trace:
+#0 E:\Xampp\htdocs\codeigniter\nhahang\system\Database\MySQLi\Connection.php(308): mysqli->query('CREATE TABLE `t...', 0)
+#1 E:\Xampp\htdocs\codeigniter\nhahang\system\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `t...')
+#2 E:\Xampp\htdocs\codeigniter\nhahang\system\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `t...')
+#3 E:\Xampp\htdocs\codeigniter\nhahang\system\Database\Forge.php(570): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `t...')
+#4 E:\Xampp\htdocs\codeigniter\nhahang\app\Database\Migrations\2024-12-24-202425_TableDish.php(46): CodeIgniter\Database\Forge->createTable('table_dish')
+#5 E:\Xampp\htdocs\codeigniter\nhahang\system\Database\MigrationRunner.php(867): App\Database\Migrations\TableDish->up()
+#6 E:\Xampp\htdocs\codeigniter\nhahang\system\Database\MigrationRunner.php(183): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 E:\Xampp\htdocs\codeigniter\nhahang\system\Commands\Database\Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 E:\Xampp\htdocs\codeigniter\nhahang\system\CLI\Commands.php(70): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 E:\Xampp\htdocs\codeigniter\nhahang\system\CLI\Console.php(48): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 E:\Xampp\htdocs\codeigniter\nhahang\system\Boot.php(338): CodeIgniter\CLI\Console->run()
+#11 E:\Xampp\htdocs\codeigniter\nhahang\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#12 E:\Xampp\htdocs\codeigniter\nhahang\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#13 {main}
+ERROR - 2024-12-24 20:31:08 --> mysqli_sql_exception: Can't create table `nhahang`.`bills` (errno: 150 "Foreign key constraint is incorrectly formed") in E:\Xampp\htdocs\codeigniter\nhahang\system\Database\MySQLi\Connection.php:308
+Stack trace:
+#0 E:\Xampp\htdocs\codeigniter\nhahang\system\Database\MySQLi\Connection.php(308): mysqli->query('CREATE TABLE `b...', 0)
+#1 E:\Xampp\htdocs\codeigniter\nhahang\system\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `b...')
+#2 E:\Xampp\htdocs\codeigniter\nhahang\system\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `b...')
+#3 E:\Xampp\htdocs\codeigniter\nhahang\system\Database\Forge.php(570): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `b...')
+#4 E:\Xampp\htdocs\codeigniter\nhahang\app\Database\Migrations\2024-12-24-202814_Bills.php(42): CodeIgniter\Database\Forge->createTable('bills')
+#5 E:\Xampp\htdocs\codeigniter\nhahang\system\Database\MigrationRunner.php(867): App\Database\Migrations\Bills->up()
+#6 E:\Xampp\htdocs\codeigniter\nhahang\system\Database\MigrationRunner.php(183): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 E:\Xampp\htdocs\codeigniter\nhahang\system\Commands\Database\Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 E:\Xampp\htdocs\codeigniter\nhahang\system\CLI\Commands.php(70): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 E:\Xampp\htdocs\codeigniter\nhahang\system\CLI\Console.php(48): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 E:\Xampp\htdocs\codeigniter\nhahang\system\Boot.php(338): CodeIgniter\CLI\Console->run()
+#11 E:\Xampp\htdocs\codeigniter\nhahang\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#12 E:\Xampp\htdocs\codeigniter\nhahang\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#13 {main}
+ERROR - 2024-12-24 20:33:34 --> mysqli_sql_exception: Can't create table `nhahang`.`bills` (errno: 150 "Foreign key constraint is incorrectly formed") in E:\Xampp\htdocs\codeigniter\nhahang\system\Database\MySQLi\Connection.php:308
+Stack trace:
+#0 E:\Xampp\htdocs\codeigniter\nhahang\system\Database\MySQLi\Connection.php(308): mysqli->query('CREATE TABLE `b...', 0)
+#1 E:\Xampp\htdocs\codeigniter\nhahang\system\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `b...')
+#2 E:\Xampp\htdocs\codeigniter\nhahang\system\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `b...')
+#3 E:\Xampp\htdocs\codeigniter\nhahang\system\Database\Forge.php(570): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `b...')
+#4 E:\Xampp\htdocs\codeigniter\nhahang\app\Database\Migrations\2024-12-24-202814_Bills.php(42): CodeIgniter\Database\Forge->createTable('bills')
+#5 E:\Xampp\htdocs\codeigniter\nhahang\system\Database\MigrationRunner.php(867): App\Database\Migrations\Bills->up()
+#6 E:\Xampp\htdocs\codeigniter\nhahang\system\Database\MigrationRunner.php(183): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 E:\Xampp\htdocs\codeigniter\nhahang\system\Commands\Database\Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 E:\Xampp\htdocs\codeigniter\nhahang\system\CLI\Commands.php(70): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 E:\Xampp\htdocs\codeigniter\nhahang\system\CLI\Console.php(48): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 E:\Xampp\htdocs\codeigniter\nhahang\system\Boot.php(338): CodeIgniter\CLI\Console->run()
+#11 E:\Xampp\htdocs\codeigniter\nhahang\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#12 E:\Xampp\htdocs\codeigniter\nhahang\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#13 {main}
+ERROR - 2024-12-24 20:34:15 --> mysqli_sql_exception: Can't create table `nhahang`.`bills` (errno: 150 "Foreign key constraint is incorrectly formed") in E:\Xampp\htdocs\codeigniter\nhahang\system\Database\MySQLi\Connection.php:308
+Stack trace:
+#0 E:\Xampp\htdocs\codeigniter\nhahang\system\Database\MySQLi\Connection.php(308): mysqli->query('CREATE TABLE `b...', 0)
+#1 E:\Xampp\htdocs\codeigniter\nhahang\system\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `b...')
+#2 E:\Xampp\htdocs\codeigniter\nhahang\system\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `b...')
+#3 E:\Xampp\htdocs\codeigniter\nhahang\system\Database\Forge.php(570): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `b...')
+#4 E:\Xampp\htdocs\codeigniter\nhahang\app\Database\Migrations\2024-12-24-202814_Bills.php(42): CodeIgniter\Database\Forge->createTable('bills')
+#5 E:\Xampp\htdocs\codeigniter\nhahang\system\Database\MigrationRunner.php(867): App\Database\Migrations\Bills->up()
+#6 E:\Xampp\htdocs\codeigniter\nhahang\system\Database\MigrationRunner.php(183): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 E:\Xampp\htdocs\codeigniter\nhahang\system\Commands\Database\Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 E:\Xampp\htdocs\codeigniter\nhahang\system\CLI\Commands.php(70): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 E:\Xampp\htdocs\codeigniter\nhahang\system\CLI\Console.php(48): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 E:\Xampp\htdocs\codeigniter\nhahang\system\Boot.php(338): CodeIgniter\CLI\Console->run()
+#11 E:\Xampp\htdocs\codeigniter\nhahang\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#12 E:\Xampp\htdocs\codeigniter\nhahang\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#13 {main}
+ERROR - 2024-12-24 20:34:55 --> mysqli_sql_exception: Can't create table `nhahang`.`bills` (errno: 150 "Foreign key constraint is incorrectly formed") in E:\Xampp\htdocs\codeigniter\nhahang\system\Database\MySQLi\Connection.php:308
+Stack trace:
+#0 E:\Xampp\htdocs\codeigniter\nhahang\system\Database\MySQLi\Connection.php(308): mysqli->query('CREATE TABLE `b...', 0)
+#1 E:\Xampp\htdocs\codeigniter\nhahang\system\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `b...')
+#2 E:\Xampp\htdocs\codeigniter\nhahang\system\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `b...')
+#3 E:\Xampp\htdocs\codeigniter\nhahang\system\Database\Forge.php(570): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `b...')
+#4 E:\Xampp\htdocs\codeigniter\nhahang\app\Database\Migrations\2024-12-24-202814_Bills.php(42): CodeIgniter\Database\Forge->createTable('bills')
+#5 E:\Xampp\htdocs\codeigniter\nhahang\system\Database\MigrationRunner.php(867): App\Database\Migrations\Bills->up()
+#6 E:\Xampp\htdocs\codeigniter\nhahang\system\Database\MigrationRunner.php(183): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 E:\Xampp\htdocs\codeigniter\nhahang\system\Commands\Database\Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 E:\Xampp\htdocs\codeigniter\nhahang\system\CLI\Commands.php(70): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 E:\Xampp\htdocs\codeigniter\nhahang\system\CLI\Console.php(48): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 E:\Xampp\htdocs\codeigniter\nhahang\system\Boot.php(338): CodeIgniter\CLI\Console->run()
+#11 E:\Xampp\htdocs\codeigniter\nhahang\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#12 E:\Xampp\htdocs\codeigniter\nhahang\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#13 {main}
+ERROR - 2024-12-24 20:35:21 --> mysqli_sql_exception: Can't create table `nhahang`.`bills` (errno: 150 "Foreign key constraint is incorrectly formed") in E:\Xampp\htdocs\codeigniter\nhahang\system\Database\MySQLi\Connection.php:308
+Stack trace:
+#0 E:\Xampp\htdocs\codeigniter\nhahang\system\Database\MySQLi\Connection.php(308): mysqli->query('CREATE TABLE `b...', 0)
+#1 E:\Xampp\htdocs\codeigniter\nhahang\system\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `b...')
+#2 E:\Xampp\htdocs\codeigniter\nhahang\system\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `b...')
+#3 E:\Xampp\htdocs\codeigniter\nhahang\system\Database\Forge.php(570): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `b...')
+#4 E:\Xampp\htdocs\codeigniter\nhahang\app\Database\Migrations\2024-12-24-202814_Bills.php(42): CodeIgniter\Database\Forge->createTable('bills')
+#5 E:\Xampp\htdocs\codeigniter\nhahang\system\Database\MigrationRunner.php(867): App\Database\Migrations\Bills->up()
+#6 E:\Xampp\htdocs\codeigniter\nhahang\system\Database\MigrationRunner.php(183): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 E:\Xampp\htdocs\codeigniter\nhahang\system\Commands\Database\Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 E:\Xampp\htdocs\codeigniter\nhahang\system\CLI\Commands.php(70): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 E:\Xampp\htdocs\codeigniter\nhahang\system\CLI\Console.php(48): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 E:\Xampp\htdocs\codeigniter\nhahang\system\Boot.php(338): CodeIgniter\CLI\Console->run()
+#11 E:\Xampp\htdocs\codeigniter\nhahang\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#12 E:\Xampp\htdocs\codeigniter\nhahang\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#13 {main}
