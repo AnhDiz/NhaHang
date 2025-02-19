@@ -25,7 +25,11 @@ a
   <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.css">
   <!-- DataTables JS -->
   <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.js"></script>
-  <?= $this->renderSection('style')?>
+  <link href="<?=base_url('home')?>/css/table.css" rel="stylesheet">
+  
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+ <?= $this->renderSection('style')?>
 </head>
 <body class="hold-transition sidebar-mini layout-fixed">
 <!-- Site wrapper -->
@@ -106,7 +110,7 @@ a
           <?php if (session()->get('dashboard/user') == true): ?>
             <li class="nav-item">
             <a href="" class="nav-link">
-                    <i class="nav-icon fas fa-th"></i>
+                    <i class="nav-icon fas fa-person-booth"></i>
                     <p>
                       Người dùng
                     </p>
@@ -115,7 +119,7 @@ a
             <ul class ="nav nav-treeview">
               <li class="nav-item">
                 <a href="<?= base_url('dashboard/user')?>" class="nav-link">
-                  <i class="nav-icon fas fa-th"></i>
+                  <!-- <i class="nav-icon fas fa-person-booth"></i> -->
                   <p>
                     Tài khoản 
                   </p>
@@ -124,7 +128,7 @@ a
               <?php if (session()->get('dashboard/group') == true): ?>
                 <li class="nav-item">
                   <a href="<?= base_url('dashboard/group')?>" class="nav-link">
-                    <i class="nav-icon fas fa-th"></i>
+                    <!-- <i class="nav-icon fas fa-person-booth"></i> -->
                     <p>
                       Chức vụ 
                     </p>
@@ -134,7 +138,7 @@ a
               <?php if (session()->get('dashboard/role') == true): ?>
                 <li class="nav-item">
                   <a href="<?= base_url('dashboard/role')?>" class="nav-link">
-                    <i class="nav-icon fas fa-th"></i>
+                    <!-- <i class="nav-icon fas fa-person-booth"></i> -->
                     <p>
                       Các quyền
                     </p>
@@ -146,7 +150,7 @@ a
           <?php if (session()->get('dashboard/material') == true): ?>
             <li class="nav-item">
               <a href="" class="nav-link">
-                <i class="nav-icon fas fa-th"></i>
+                <i class="nav-icon fas fa-tree"></i>
                 <p>
                   Nguyên liệu
                 </p>
@@ -155,7 +159,7 @@ a
               <ul class ="nav nav-treeview">
                 <li class="nav-item">
                   <a href="<?= base_url('dashboard/material')?>" class="nav-link">
-                    <i class="nav-icon fas fa-th"></i>
+                    <!-- <i class="nav-icon fas fa-th"></i> -->
                     <p>
                       Nguyên liệu
                     </p>
@@ -163,7 +167,7 @@ a
                 </li>
                 <li class="nav-item">
                   <a href="<?= base_url('dashboard/materialtype')?>" class="nav-link">
-                    <i class="nav-icon fas fa-th"></i>
+                    <!-- <i class="nav-icon fas fa-th"></i> -->
                     <p>
                       Loại nguyên liệu
                     </p>
@@ -171,9 +175,17 @@ a
                 </li>
                 <li class="nav-item">
                   <a href="<?= base_url('dashboard/materialunit')?>" class="nav-link">
-                    <i class="nav-icon fas fa-th"></i>
+                    <!-- <i class="nav-icon fas fa-th"></i> -->
                     <p>
                       Đơn vị đo nguyên liệu
+                    </p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="<?= base_url('dashboard/materialhistory')?>" class="nav-link">
+                    <!-- <i class="nav-icon fas fa-th"></i> -->
+                    <p>
+                      Lịch sử xuất nguyên liệu
                     </p>
                   </a>
                 </li>
@@ -183,7 +195,7 @@ a
           <?php if (session()->get('dashboard/dish') == true): ?>
             <li class="nav-item">
               <a href="" class="nav-link">
-                <i class="nav-icon fas fa-th"></i>
+                <i class="nav-icon fas fa-chart-pie"></i>
                 <p>
                   Món ăn
                 </p>
@@ -192,32 +204,30 @@ a
               <ul class ="nav nav-treeview">
                 <li class="nav-item">
                   <a href="<?= base_url('dashboard/dish')?>" class="nav-link">
-                    <i class="nav-icon fas fa-th"></i>
+                    <!-- <i class="nav-icon fas fa-chart-pie"></i> -->
                     <p>
                       Danh sách món ăn
                     </p>
                   </a>
                 </li>
-                <?php if (session()->get('dashboard/menu') == true): ?>
-                <li class="nav-item">
-                  <a href="<?= base_url('dashboard/menu')?>" class="nav-link">
-                    <i class="nav-icon fas fa-th"></i>
-                    <p>
-                      Menu
-                    </p>
-                  </a>
-                </li>
-                <?php endif;?>
                 <?php if (session()->get('dashboard/dishtype') == true): ?>
                 <li class="nav-item">
                   <a href="<?= base_url('dashboard/dishtype')?>" class="nav-link">
-                    <i class="nav-icon fas fa-th"></i>
+                    <!-- <i class="nav-icon fas fa-th"></i> -->
                     <p>
                       Loại món ăn
                     </p>
                   </a>
                 </li>
                 <?php endif;?>
+                <li class="nav-item">
+                  <a href="<?= base_url('dashboard/tabledish')?>" class="nav-link">
+                    <!-- <i class="nav-icon fas fa-th"></i> -->
+                    <p>
+                      Danh sách món chờ
+                    </p>
+                  </a>
+                </li>
               </ul>
             </li>
           <?php endif; ?>
@@ -233,7 +243,7 @@ a
               <ul class ="nav nav-treeview">
                 <li class="nav-item">
                   <a href="<?= base_url('dashboard/table')?>" class="nav-link">
-                    <i class="nav-icon fas fa-th"></i>
+                    <!-- <i class="nav-icon fas fa-th"></i> -->
                     <p>
                       Danh sách Bàn ăn
                     </p>
@@ -243,7 +253,7 @@ a
               <ul class ="nav nav-treeview">
                 <li class="nav-item">
                   <a href="<?= base_url('dashboard/booking')?>" class="nav-link">
-                    <i class="nav-icon fas fa-th"></i>
+                    <!-- <i class="nav-icon fas fa-th"></i> -->
                     <p>
                       Danh sách đặt bàn
                     </p>

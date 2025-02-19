@@ -20,10 +20,18 @@ class Bills extends Migration
                 'constraint'     => 11,
                 'unsigned'       => true,
             ],
-            'user_id' => [
-                'type' => 'INT',
-                'constraint'     => 5,
-                'unsigned'       => true,
+            'email' =>[
+                'type' => 'VARCHAR',
+                'constraint' => '255',
+                'default' =>'NULL',
+            ],
+            'customer_name' =>[
+                'type' => 'VARCHAR',
+                'constraint' => '255',
+            ],
+            'phone_number' =>[
+                'type' => 'VARCHAR',
+                'constraint' => '255',
             ],
             'total' => [
                 'type'       => 'DECIMAL',
@@ -38,7 +46,6 @@ class Bills extends Migration
         ]);
         $this->forge->addKey('id', true);
         $this->forge->addForeignKey('table_id', 'tables', 'id', 'CASCADE', 'CASCADE');
-        $this->forge->addForeignKey('user_id', 'user', 'id', 'CASCADE', 'CASCADE');
         $this->forge->createTable('bills');
     }
 

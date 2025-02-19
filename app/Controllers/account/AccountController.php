@@ -4,20 +4,21 @@ namespace App\Controllers\account;
 
 use App\Controllers\BaseController;
 use App\Models\UserModel;
-
+use App\Controllers\MailController;
 use Exception;
 use App\Common\Result;
 
 
 class AccountController extends BaseController
 {
-    private $otp;
+    private $mail;
     private $users;
     function __construct()
     {
         parent::__construct();
         $this->users = new UserModel();
         $this->users->protect(false);
+        $this->mail = new MailController();
     }
     public function index()
     {
@@ -38,6 +39,7 @@ class AccountController extends BaseController
                     'id'       => $data['id'],
                     'name' => $data['name'],
                     'email'    => $data['email'],
+                    'phone_num' =>$data['phone_number'],
                     'group_id' => $data['group_id'],
                     'logged_in'     => TRUE,
                     'is_admin' => $data['is_admin'],
@@ -51,7 +53,7 @@ class AccountController extends BaseController
             }
         }else{
             $session->setFlashdata('msg', 'Username not Found');
-            return redirect()->to('/login');
+            return redirect()->to('/dang_nhap');
         }
     }
     public function regist(){
@@ -59,36 +61,14 @@ class AccountController extends BaseController
     }
     public function create(){
         $result = $this->AddUserInfo($this->request);
-        return redirect()->back()->withInput()->with($result['messageCode'],$result['message']);
-    }
-    public function sendemail($datasave){
-        $to = $datasave['email'];
-        $sub = 'Đăng ký tài khoản';
-        $this->otp = $this->generateOTP(6);
-        $message = 'Mã xác nhận của bạn: '. $this->otp;
-
-        $email = \Config\Services::email();
-        $email->setFrom('htalol1106@gmail.com');
-        $email->setTo($to);
-        $email->setSubject($sub);
-        $email->setMessage($message);
-        if($email->send()){
-           return view('otpform');
+        if($result['messageCode'] == Result::MESSAGE_CODE_ERR){
+            return redirect()->back()->withInput()->with($result['messageCode'],$result['message']);
+        }else{
+            $request = $this->request->getPost(); 
+            $data = ['email'=> $request['email']];
+            // dd($data);
+            return view('otpform',$data);
         }
-    }
-    function generateOTP($length = 6)
-    {
-        $characters = '0123456789'; // Use numeric characters for OTP
-        $otp = '';
-
-        for ($i = 0; $i < $length; $i++) {
-            $otp .= $characters[random_int(0, strlen($characters) - 1)];
-        }
-
-        return $otp;
-    }
-    public function otp(){
-
     }
     public function AddUserInfo($requestData){
         $validate = $this->validateAddUser($requestData);
@@ -102,15 +82,19 @@ class AccountController extends BaseController
         }
 
         $datasave = $requestData->getPost();
-
+        // dd($datasave);
         $datasave['is_admin'] = '0';
         $datasave['is_inside'] = '0';
         $datasave['group_id'] = '2';
+        $registemail = $datasave['email'];
+        // dd($email);
+        $otp = $this->mail->generateOTP(6);
+        $datasave['otp'] = $otp;
         unset($datasave['password_confirm']);
         $datasave['password'] = password_hash($datasave['password'],PASSWORD_BCRYPT);
         try {
             $this->users->save($datasave);
-            $this->sendemail($datasave);
+            $this->mail->sendeotp($registemail,$otp);
             return[
                 'status' => Result::STATUS_CODE_OK,
                 'messageCode' => Result::MESSAGE_CODE_OK,
@@ -158,5 +142,25 @@ class AccountController extends BaseController
         $session = session();
         $session->destroy();
         return redirect()->to('/dang_nhap');
+    }
+    public function otp(){
+        $result = $this->checkotp($this->request);
+        if($result){
+            return redirect()->to('dang_nhap');
+        }
+        
+    }
+    public function checkotp($request){
+        $data = $request->getPost();
+        $db_otp = $this->users->select('otp')->where('email',$data['email'])->first();
+        if ($db_otp == $data['otp']){
+            return true;
+        }else{
+            return[
+                'status' => Result::STATUS_CODE_ERR,
+                'messageCode' => Result::MESSAGE_CODE_ERR,
+                'message' => ['thất bại' => 'max otp không chính xác']
+            ];
+        }
     }
 }

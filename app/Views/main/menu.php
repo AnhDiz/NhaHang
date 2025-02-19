@@ -34,14 +34,6 @@
 
 <body>
     <div class="container-xxl bg-white p-0">
-        <!-- Spinner Start -->
-        <!-- <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
-            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
-                <span class="sr-only">Loading...</span>
-            </div>
-        </div> -->
-        <!-- Spinner End -->
-
 
         <!-- Navbar & Hero Start -->
         <div class="container-xxl position-relative p-0">
@@ -62,16 +54,22 @@
                             <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
                             <div class="dropdown-menu m-0">
                                 <a href="<?=base_url('main/booking')?>" class="dropdown-item">Đặt bàn</a>
-                                <a href="<?=base_url('main/testmonial')?>" class="dropdown-item">Đánh giá</a>
+                                <a href="<?=base_url('main/personal')?>" class="dropdown-item">Cá nhân</a>
                             </div>
                         </div>
                         <a href="<?=base_url(relativePath: 'main/contact')?>" class="nav-item nav-link">Contact</a>
                     </div>
                     <a href="<?=base_url('main/booking')?>" class="btn btn-primary py-2 px-4">Đặt bàn</a>
+                    <?php if(session()->get('logged_in')){ ?>
+                    <div class="user-icon-container" style="position: relative; display: inline-block; cursor: pointer;">
+                        <i class="fas fa-user-circle" style="font-size: 40px;"></i>
+                        <div class="logout-menu" style="display: none; position: absolute; top: 30px; right: 0; background: white; border: 1px solid #ccc; padding: 10px; border-radius: 5px; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);">
+                            <a href="logout" style="text-decoration: none; color: black;">Đăng xuất</a>
+                        </div>
+                    </div>
+                    <?php }?>
                 </div>
         </nav>
-
-
             <div class="container-xxl py-5 bg-dark hero-header mb-5">
                 <div class="container text-center my-5 pt-5 pb-4">
                     <h1 class="display-3 text-white mb-3 animated slideInDown">Food Menu</h1>
@@ -516,6 +514,17 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+    <script>
+        $(document).on('click', '.user-icon-container', function () {
+            $('.logout-menu').toggle();
+        });
+        
+        $(document).on('click', function (e) {
+            if (!$(e.target).closest('.user-icon-container').length) {
+                $('.logout-menu').hide();
+            }
+        });
+    </script>
 </body>
 
 </html>

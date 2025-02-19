@@ -12,18 +12,23 @@ $routes->get('/dang_ky','account\AccountController::regist');
 $routes->post('/registed','account\AccountController::create');
 $routes->post('/login/authenticate', 'account\AccountController::login');
 $routes->get('/logout', 'account\AccountController::logout');
+$routes->get('/otp', 'account\AccountController::otp');
 $routes->get('error','Home::error');
 
 $routes->group('main',function($routes):void{
     $routes->group('booking',function($routes):void{
         $routes->get('','main\BookController::index');
         $routes->post('getbyfloor','main\BookController::getbyfloor');
+        $routes->post('create','main\BookController::create');
     });
     $routes->get('contact','home::contact');
     $routes->get('menu','home::menu');
     $routes->get('service','home::service');
-    $routes->get('team','home::team');
-    $routes->get('testmonial','home::testmonial');
+    $routes->group('personal',function($routes):void{
+        $routes->get('','main\PersonalController::index');
+        $routes->get('detail/(:num)','main\PersonalController::bookedetail/$1');
+        $routes->post('update','main\PersonalController::update');
+    });
 });
 
 $routes->group('notification',function($routes):void{
@@ -82,6 +87,9 @@ $routes->group('dashboard',['filter'=>'permissionFilter'],function($routes){
         $routes->get('add','dashboard\Material\MaterialUnitController::add');
         $routes->post('create','dashboard\Material\MaterialUnitController::create');
     });
+    $routes->group('materialhistory',function($routes): void{
+        $routes->get('','dashboard\Material\MaterialHController::index');
+    });
     $routes->group('dish',function($routes): void{
         $routes->get('','dashboard\Dish\DishController::index');
         $routes->get('add','dashboard\Dish\DishController::add');
@@ -98,6 +106,15 @@ $routes->group('dashboard',['filter'=>'permissionFilter'],function($routes){
         $routes->post('update','dashboard\Dish\DishTypeController::update');
         $routes->get('delete/(:num)', 'dashboard\Dish\DishTypeController::delete/$1');
     });
+    $routes->group('tabledish',function($routes): void{
+        $routes->get('','dashboard\Table\TableDishController::index');
+        $routes->get('add','dashboard\Table\TableDishController::add');
+        $routes->post('create','dashboard\Table\TableDishController::create');
+        $routes->get('edit/(:num)', 'dashboard\Table\TableDishController::edit/$1');
+        $routes->post('update','dashboard\Table\TableDishController::update');
+        $routes->get('delete/(:num)', 'dashboard\Table\TableDishController::delete/$1');
+    });
+    
     $routes->group('table',function($routes){
         $routes->get('','dashboard\Table\TableController::index');
         $routes->get('add','dashboard\Table\TableController::add');
@@ -116,6 +133,9 @@ $routes->group('dashboard',['filter'=>'permissionFilter'],function($routes){
         $routes->post('update','dashboard\Table\BookingController::update');
         $routes->post('updateI','dashboard\Table\BookingController::updateid');
         $routes->get('delete/(:num)', 'dashboard\Table\BookingController::delete/$1');
+    });
+    $routes->group('menu',function($routes){
+        $routes->get('','dashboard\Dish\MenuController::index');
     });
 });
 

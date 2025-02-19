@@ -1,0 +1,634 @@
+INFO - 2025-02-14 03:46:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-14 03:46:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-14 03:46:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-14 03:48:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-14 03:48:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-14 03:48:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-14 03:48:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-14 03:48:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-14 03:48:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-14 03:48:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-14 03:50:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-14 03:50:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-14 03:50:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-14 03:51:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-14 03:51:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-14 03:51:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-14 03:51:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-14 03:51:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-14 04:19:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-14 04:20:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-14 04:21:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-14 04:21:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-14 04:23:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-14 04:23:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-14 04:23:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-14 04:24:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-14 04:24:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-14 04:24:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-14 04:24:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-02-14 04:24:52 --> mysqli_sql_exception: Unknown column 'id' in 'field list' in E:\Xampp\htdocs\codeigniter\nhahang\system\Database\MySQLi\Connection.php:308
+Stack trace:
+#0 E:\Xampp\htdocs\codeigniter\nhahang\system\Database\MySQLi\Connection.php(308): mysqli->query('SELECT `id`, `t...', 0)
+#1 E:\Xampp\htdocs\codeigniter\nhahang\system\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `id`, `t...')
+#2 E:\Xampp\htdocs\codeigniter\nhahang\system\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `id`, `t...')
+#3 E:\Xampp\htdocs\codeigniter\nhahang\system\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT `id`, `t...', Array, false)
+#4 E:\Xampp\htdocs\codeigniter\nhahang\system\Model.php(275): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\Xampp\htdocs\codeigniter\nhahang\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#6 E:\Xampp\htdocs\codeigniter\nhahang\app\Controllers\dashboard\Material\MaterialHController.php(25): CodeIgniter\BaseModel->findAll()
+#7 E:\Xampp\htdocs\codeigniter\nhahang\system\CodeIgniter.php(933): App\Controllers\dashboard\Material\MaterialHController->index()
+#8 E:\Xampp\htdocs\codeigniter\nhahang\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\dashboard\Material\MaterialHController))
+#9 E:\Xampp\htdocs\codeigniter\nhahang\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 E:\Xampp\htdocs\codeigniter\nhahang\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#11 E:\Xampp\htdocs\codeigniter\nhahang\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 E:\Xampp\htdocs\codeigniter\nhahang\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 E:\Xampp\htdocs\codeigniter\nhahang\system\Commands\Server\rewrite.php(49): require_once('E:\\Xampp\\htdocs...')
+#14 {main}
+CRITICAL - 2025-02-14 04:24:52 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'id' in 'field list'
+[Method: GET, Route: dashboard/materialhistory]
+in SYSTEMPATH\Database\BaseConnection.php on line 676.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT `id`, `table_num`
+FROM `materials`', [], false)
+ 2 SYSTEMPATH\Model.php(275): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\dashboard\Material\MaterialHController.php(25): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\dashboard\Material\MaterialHController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\dashboard\Material\MaterialHController))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('E:\\Xampp\\htdocs\\codeigniter\\nhahang\\public\\index.php')
+CRITICAL - 2025-02-14 04:24:52 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'id' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 313.
+ 1 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `id`, `table_num`
+FROM `materials`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `id`, `table_num`
+FROM `materials`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT `id`, `table_num`
+FROM `materials`', [], false)
+ 4 SYSTEMPATH\Model.php(275): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Controllers\dashboard\Material\MaterialHController.php(25): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\dashboard\Material\MaterialHController->index()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\dashboard\Material\MaterialHController))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('E:\\Xampp\\htdocs\\codeigniter\\nhahang\\public\\index.php')
+CRITICAL - 2025-02-14 04:24:52 --> [Caused by] mysqli_sql_exception: Unknown column 'id' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 308.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(308): mysqli->query('SELECT `id`, `table_num`
+FROM `materials`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `id`, `table_num`
+FROM `materials`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `id`, `table_num`
+FROM `materials`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT `id`, `table_num`
+FROM `materials`', [], false)
+ 5 SYSTEMPATH\Model.php(275): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\dashboard\Material\MaterialHController.php(25): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\dashboard\Material\MaterialHController->index()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\dashboard\Material\MaterialHController))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('E:\\Xampp\\htdocs\\codeigniter\\nhahang\\public\\index.php')
+INFO - 2025-02-14 04:25:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-02-14 04:25:48 --> mysqli_sql_exception: Unknown column 'quanity' in 'field list' in E:\Xampp\htdocs\codeigniter\nhahang\system\Database\MySQLi\Connection.php:308
+Stack trace:
+#0 E:\Xampp\htdocs\codeigniter\nhahang\system\Database\MySQLi\Connection.php(308): mysqli->query('SELECT `materia...', 0)
+#1 E:\Xampp\htdocs\codeigniter\nhahang\system\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `materia...')
+#2 E:\Xampp\htdocs\codeigniter\nhahang\system\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `materia...')
+#3 E:\Xampp\htdocs\codeigniter\nhahang\system\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT `materia...', Array, false)
+#4 E:\Xampp\htdocs\codeigniter\nhahang\system\Model.php(275): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\Xampp\htdocs\codeigniter\nhahang\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#6 E:\Xampp\htdocs\codeigniter\nhahang\app\Controllers\dashboard\Material\MaterialHController.php(25): CodeIgniter\BaseModel->findAll()
+#7 E:\Xampp\htdocs\codeigniter\nhahang\system\CodeIgniter.php(933): App\Controllers\dashboard\Material\MaterialHController->index()
+#8 E:\Xampp\htdocs\codeigniter\nhahang\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\dashboard\Material\MaterialHController))
+#9 E:\Xampp\htdocs\codeigniter\nhahang\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 E:\Xampp\htdocs\codeigniter\nhahang\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#11 E:\Xampp\htdocs\codeigniter\nhahang\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 E:\Xampp\htdocs\codeigniter\nhahang\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 E:\Xampp\htdocs\codeigniter\nhahang\system\Commands\Server\rewrite.php(49): require_once('E:\\Xampp\\htdocs...')
+#14 {main}
+CRITICAL - 2025-02-14 04:25:48 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'quanity' in 'field list'
+[Method: GET, Route: dashboard/materialhistory]
+in SYSTEMPATH\Database\BaseConnection.php on line 676.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT `material_id`, `quanity`
+FROM `materials`', [], false)
+ 2 SYSTEMPATH\Model.php(275): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\dashboard\Material\MaterialHController.php(25): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\dashboard\Material\MaterialHController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\dashboard\Material\MaterialHController))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('E:\\Xampp\\htdocs\\codeigniter\\nhahang\\public\\index.php')
+CRITICAL - 2025-02-14 04:25:49 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'quanity' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 313.
+ 1 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `material_id`, `quanity`
+FROM `materials`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `material_id`, `quanity`
+FROM `materials`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT `material_id`, `quanity`
+FROM `materials`', [], false)
+ 4 SYSTEMPATH\Model.php(275): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Controllers\dashboard\Material\MaterialHController.php(25): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\dashboard\Material\MaterialHController->index()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\dashboard\Material\MaterialHController))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('E:\\Xampp\\htdocs\\codeigniter\\nhahang\\public\\index.php')
+CRITICAL - 2025-02-14 04:25:49 --> [Caused by] mysqli_sql_exception: Unknown column 'quanity' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 308.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(308): mysqli->query('SELECT `material_id`, `quanity`
+FROM `materials`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `material_id`, `quanity`
+FROM `materials`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `material_id`, `quanity`
+FROM `materials`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT `material_id`, `quanity`
+FROM `materials`', [], false)
+ 5 SYSTEMPATH\Model.php(275): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\dashboard\Material\MaterialHController.php(25): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\dashboard\Material\MaterialHController->index()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\dashboard\Material\MaterialHController))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('E:\\Xampp\\htdocs\\codeigniter\\nhahang\\public\\index.php')
+INFO - 2025-02-14 04:26:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-02-14 04:26:23 --> ErrorException: Undefined variable $types
+[Method: GET, Route: dashboard/materialhistory]
+in APPPATH\Views\admin\materialhistory\table.php on line 30.
+ 1 APPPATH\Views\admin\materialhistory\table.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $types', 'E:\\Xampp\\htdocs\\codeigniter\\nhahang\\app\\Views\\admin\\materialhistory\\table.php', 30)
+ 2 SYSTEMPATH\View\View.php(234): include('E:\\Xampp\\htdocs\\codeigniter\\nhahang\\app\\Views\\admin\\materialhistory\\table.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('admin/materialhistory/table', [], true)
+ 5 APPPATH\Controllers\dashboard\Material\MaterialHController.php(35): view('admin/materialhistory/table', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\dashboard\Material\MaterialHController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\dashboard\Material\MaterialHController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('E:\\Xampp\\htdocs\\codeigniter\\nhahang\\public\\index.php')
+INFO - 2025-02-14 04:27:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-02-14 04:27:24 --> ErrorException: Undefined variable $units
+[Method: GET, Route: dashboard/materialhistory]
+in APPPATH\Views\admin\materialhistory\table.php on line 37.
+ 1 APPPATH\Views\admin\materialhistory\table.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $units', 'E:\\Xampp\\htdocs\\codeigniter\\nhahang\\app\\Views\\admin\\materialhistory\\table.php', 37)
+ 2 SYSTEMPATH\View\View.php(234): include('E:\\Xampp\\htdocs\\codeigniter\\nhahang\\app\\Views\\admin\\materialhistory\\table.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('admin/materialhistory/table', [], true)
+ 5 APPPATH\Controllers\dashboard\Material\MaterialHController.php(38): view('admin/materialhistory/table', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\dashboard\Material\MaterialHController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\dashboard\Material\MaterialHController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('E:\\Xampp\\htdocs\\codeigniter\\nhahang\\public\\index.php')
+INFO - 2025-02-14 04:27:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-02-14 04:27:54 --> ErrorException: Undefined variable $units
+[Method: GET, Route: dashboard/materialhistory]
+in APPPATH\Views\admin\materialhistory\table.php on line 37.
+ 1 APPPATH\Views\admin\materialhistory\table.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $units', 'E:\\Xampp\\htdocs\\codeigniter\\nhahang\\app\\Views\\admin\\materialhistory\\table.php', 37)
+ 2 SYSTEMPATH\View\View.php(234): include('E:\\Xampp\\htdocs\\codeigniter\\nhahang\\app\\Views\\admin\\materialhistory\\table.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('admin/materialhistory/table', [], true)
+ 5 APPPATH\Controllers\dashboard\Material\MaterialHController.php(41): view('admin/materialhistory/table', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\dashboard\Material\MaterialHController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\dashboard\Material\MaterialHController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('E:\\Xampp\\htdocs\\codeigniter\\nhahang\\public\\index.php')
+INFO - 2025-02-14 04:28:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-14 04:29:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-02-14 04:29:38 --> ErrorException: Undefined variable $typefilter
+[Method: GET, Route: dashboard/materialhistory]
+in APPPATH\Views\admin\materialhistory\table.php on line 38.
+ 1 APPPATH\Views\admin\materialhistory\table.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $typefilter', 'E:\\Xampp\\htdocs\\codeigniter\\nhahang\\app\\Views\\admin\\materialhistory\\table.php', 38)
+ 2 SYSTEMPATH\View\View.php(234): include('E:\\Xampp\\htdocs\\codeigniter\\nhahang\\app\\Views\\admin\\materialhistory\\table.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('admin/materialhistory/table', [], true)
+ 5 APPPATH\Controllers\dashboard\Material\MaterialHController.php(42): view('admin/materialhistory/table', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\dashboard\Material\MaterialHController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\dashboard\Material\MaterialHController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('E:\\Xampp\\htdocs\\codeigniter\\nhahang\\public\\index.php')
+INFO - 2025-02-14 04:30:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-02-14 04:30:30 --> ErrorException: Undefined variable $materials
+[Method: GET, Route: dashboard/materialhistory]
+in APPPATH\Views\admin\materialhistory\table.php on line 76.
+ 1 APPPATH\Views\admin\materialhistory\table.php(76): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $materials', 'E:\\Xampp\\htdocs\\codeigniter\\nhahang\\app\\Views\\admin\\materialhistory\\table.php', 76)
+ 2 SYSTEMPATH\View\View.php(234): include('E:\\Xampp\\htdocs\\codeigniter\\nhahang\\app\\Views\\admin\\materialhistory\\table.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('admin/materialhistory/table', [], true)
+ 5 APPPATH\Controllers\dashboard\Material\MaterialHController.php(46): view('admin/materialhistory/table', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\dashboard\Material\MaterialHController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\dashboard\Material\MaterialHController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('E:\\Xampp\\htdocs\\codeigniter\\nhahang\\public\\index.php')
+INFO - 2025-02-14 04:31:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-02-14 04:31:12 --> ErrorException: Undefined property: App\Controllers\dashboard\Material\MaterialHController::$materialmodel
+[Method: GET, Route: dashboard/materialhistory]
+in APPPATH\Controllers\dashboard\Material\MaterialHController.php on line 35.
+ 1 APPPATH\Controllers\dashboard\Material\MaterialHController.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\dashboard\\Material\\MaterialHController::$materialmodel', 'E:\\Xampp\\htdocs\\codeigniter\\nhahang\\app\\Controllers\\dashboard\\Material\\MaterialHController.php', 35)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\dashboard\Material\MaterialHController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\dashboard\Material\MaterialHController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('E:\\Xampp\\htdocs\\codeigniter\\nhahang\\public\\index.php')
+INFO - 2025-02-14 04:31:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-14 04:37:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-02-14 04:37:14 --> mysqli_sql_exception: Unknown column 'materil_id' in 'field list' in E:\Xampp\htdocs\codeigniter\nhahang\system\Database\MySQLi\Connection.php:308
+Stack trace:
+#0 E:\Xampp\htdocs\codeigniter\nhahang\system\Database\MySQLi\Connection.php(308): mysqli->query('SELECT `materil...', 0)
+#1 E:\Xampp\htdocs\codeigniter\nhahang\system\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `materil...')
+#2 E:\Xampp\htdocs\codeigniter\nhahang\system\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `materil...')
+#3 E:\Xampp\htdocs\codeigniter\nhahang\system\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT `materil...', Array, false)
+#4 E:\Xampp\htdocs\codeigniter\nhahang\system\Model.php(275): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\Xampp\htdocs\codeigniter\nhahang\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#6 E:\Xampp\htdocs\codeigniter\nhahang\app\Controllers\dashboard\Material\MaterialHController.php(36): CodeIgniter\BaseModel->findAll()
+#7 E:\Xampp\htdocs\codeigniter\nhahang\system\CodeIgniter.php(933): App\Controllers\dashboard\Material\MaterialHController->index()
+#8 E:\Xampp\htdocs\codeigniter\nhahang\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\dashboard\Material\MaterialHController))
+#9 E:\Xampp\htdocs\codeigniter\nhahang\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 E:\Xampp\htdocs\codeigniter\nhahang\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#11 E:\Xampp\htdocs\codeigniter\nhahang\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 E:\Xampp\htdocs\codeigniter\nhahang\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 E:\Xampp\htdocs\codeigniter\nhahang\system\Commands\Server\rewrite.php(49): require_once('E:\\Xampp\\htdocs...')
+#14 {main}
+CRITICAL - 2025-02-14 04:37:14 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'materil_id' in 'field list'
+[Method: GET, Route: dashboard/materialhistory]
+in SYSTEMPATH\Database\BaseConnection.php on line 676.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT `materil_id`, `quanity`
+FROM `extract_material`', [], false)
+ 2 SYSTEMPATH\Model.php(275): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\dashboard\Material\MaterialHController.php(36): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\dashboard\Material\MaterialHController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\dashboard\Material\MaterialHController))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('E:\\Xampp\\htdocs\\codeigniter\\nhahang\\public\\index.php')
+CRITICAL - 2025-02-14 04:37:14 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'materil_id' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 313.
+ 1 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `materil_id`, `quanity`
+FROM `extract_material`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `materil_id`, `quanity`
+FROM `extract_material`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT `materil_id`, `quanity`
+FROM `extract_material`', [], false)
+ 4 SYSTEMPATH\Model.php(275): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Controllers\dashboard\Material\MaterialHController.php(36): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\dashboard\Material\MaterialHController->index()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\dashboard\Material\MaterialHController))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('E:\\Xampp\\htdocs\\codeigniter\\nhahang\\public\\index.php')
+CRITICAL - 2025-02-14 04:37:14 --> [Caused by] mysqli_sql_exception: Unknown column 'materil_id' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 308.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(308): mysqli->query('SELECT `materil_id`, `quanity`
+FROM `extract_material`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `materil_id`, `quanity`
+FROM `extract_material`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `materil_id`, `quanity`
+FROM `extract_material`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT `materil_id`, `quanity`
+FROM `extract_material`', [], false)
+ 5 SYSTEMPATH\Model.php(275): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\dashboard\Material\MaterialHController.php(36): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\dashboard\Material\MaterialHController->index()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\dashboard\Material\MaterialHController))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('E:\\Xampp\\htdocs\\codeigniter\\nhahang\\public\\index.php')
+INFO - 2025-02-14 04:37:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-14 04:38:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-14 04:39:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-14 04:45:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-14 04:46:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-14 04:47:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-14 04:47:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-14 04:47:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-14 04:48:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-14 04:48:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-14 04:52:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-14 04:53:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-14 04:54:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-14 04:54:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-14 04:54:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-14 04:54:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-14 04:55:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-14 04:55:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-14 04:55:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-14 04:57:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-14 04:57:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-14 04:57:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-14 05:04:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-02-14 05:04:40 --> BadMethodCallException: Call to undefined method App\Models\TableModel::search
+[Method: GET, Route: dashboard/tabledish]
+in SYSTEMPATH\Model.php on line 921.
+ 1 APPPATH\Controllers\dashboard\Table\TableDishController.php(43): CodeIgniter\Model->__call('search', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Dashboard\Table\TableDishController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard\Table\TableDishController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('E:\\Xampp\\htdocs\\codeigniter\\nhahang\\public\\index.php')
+INFO - 2025-02-14 05:05:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-02-14 05:05:36 --> mysqli_sql_exception: Unknown column 'dish_id' in 'field list' in E:\Xampp\htdocs\codeigniter\nhahang\system\Database\MySQLi\Connection.php:308
+Stack trace:
+#0 E:\Xampp\htdocs\codeigniter\nhahang\system\Database\MySQLi\Connection.php(308): mysqli->query('SELECT `dish_id...', 0)
+#1 E:\Xampp\htdocs\codeigniter\nhahang\system\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `dish_id...')
+#2 E:\Xampp\htdocs\codeigniter\nhahang\system\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `dish_id...')
+#3 E:\Xampp\htdocs\codeigniter\nhahang\system\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT `dish_id...', Array, false)
+#4 E:\Xampp\htdocs\codeigniter\nhahang\system\Model.php(275): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\Xampp\htdocs\codeigniter\nhahang\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#6 E:\Xampp\htdocs\codeigniter\nhahang\app\Controllers\dashboard\Table\TableDishController.php(43): CodeIgniter\BaseModel->findAll()
+#7 E:\Xampp\htdocs\codeigniter\nhahang\system\CodeIgniter.php(933): App\Controllers\Dashboard\Table\TableDishController->index()
+#8 E:\Xampp\htdocs\codeigniter\nhahang\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard\Table\TableDishController))
+#9 E:\Xampp\htdocs\codeigniter\nhahang\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 E:\Xampp\htdocs\codeigniter\nhahang\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#11 E:\Xampp\htdocs\codeigniter\nhahang\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 E:\Xampp\htdocs\codeigniter\nhahang\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 E:\Xampp\htdocs\codeigniter\nhahang\system\Commands\Server\rewrite.php(49): require_once('E:\\Xampp\\htdocs...')
+#14 {main}
+CRITICAL - 2025-02-14 05:05:36 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'dish_id' in 'field list'
+[Method: GET, Route: dashboard/tabledish]
+in SYSTEMPATH\Database\BaseConnection.php on line 676.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT `dish_id`, `name`
+FROM `tables`', [], false)
+ 2 SYSTEMPATH\Model.php(275): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\dashboard\Table\TableDishController.php(43): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Dashboard\Table\TableDishController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard\Table\TableDishController))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('E:\\Xampp\\htdocs\\codeigniter\\nhahang\\public\\index.php')
+CRITICAL - 2025-02-14 05:05:36 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'dish_id' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 313.
+ 1 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `dish_id`, `name`
+FROM `tables`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `dish_id`, `name`
+FROM `tables`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT `dish_id`, `name`
+FROM `tables`', [], false)
+ 4 SYSTEMPATH\Model.php(275): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Controllers\dashboard\Table\TableDishController.php(43): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Dashboard\Table\TableDishController->index()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard\Table\TableDishController))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('E:\\Xampp\\htdocs\\codeigniter\\nhahang\\public\\index.php')
+CRITICAL - 2025-02-14 05:05:36 --> [Caused by] mysqli_sql_exception: Unknown column 'dish_id' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 308.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(308): mysqli->query('SELECT `dish_id`, `name`
+FROM `tables`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `dish_id`, `name`
+FROM `tables`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `dish_id`, `name`
+FROM `tables`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT `dish_id`, `name`
+FROM `tables`', [], false)
+ 5 SYSTEMPATH\Model.php(275): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\dashboard\Table\TableDishController.php(43): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Dashboard\Table\TableDishController->index()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard\Table\TableDishController))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('E:\\Xampp\\htdocs\\codeigniter\\nhahang\\public\\index.php')
+INFO - 2025-02-14 05:06:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-02-14 05:06:48 --> mysqli_sql_exception: Unknown column 'dish_id' in 'field list' in E:\Xampp\htdocs\codeigniter\nhahang\system\Database\MySQLi\Connection.php:308
+Stack trace:
+#0 E:\Xampp\htdocs\codeigniter\nhahang\system\Database\MySQLi\Connection.php(308): mysqli->query('SELECT `dish_id...', 0)
+#1 E:\Xampp\htdocs\codeigniter\nhahang\system\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `dish_id...')
+#2 E:\Xampp\htdocs\codeigniter\nhahang\system\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `dish_id...')
+#3 E:\Xampp\htdocs\codeigniter\nhahang\system\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT `dish_id...', Array, false)
+#4 E:\Xampp\htdocs\codeigniter\nhahang\system\Model.php(275): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\Xampp\htdocs\codeigniter\nhahang\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#6 E:\Xampp\htdocs\codeigniter\nhahang\app\Controllers\dashboard\Table\TableDishController.php(43): CodeIgniter\BaseModel->findAll()
+#7 E:\Xampp\htdocs\codeigniter\nhahang\system\CodeIgniter.php(933): App\Controllers\Dashboard\Table\TableDishController->index()
+#8 E:\Xampp\htdocs\codeigniter\nhahang\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard\Table\TableDishController))
+#9 E:\Xampp\htdocs\codeigniter\nhahang\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 E:\Xampp\htdocs\codeigniter\nhahang\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#11 E:\Xampp\htdocs\codeigniter\nhahang\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 E:\Xampp\htdocs\codeigniter\nhahang\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 E:\Xampp\htdocs\codeigniter\nhahang\system\Commands\Server\rewrite.php(49): require_once('E:\\Xampp\\htdocs...')
+#14 {main}
+CRITICAL - 2025-02-14 05:06:48 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'dish_id' in 'field list'
+[Method: GET, Route: dashboard/tabledish]
+in SYSTEMPATH\Database\BaseConnection.php on line 676.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT `dish_id`, `name`
+FROM `tables`', [], false)
+ 2 SYSTEMPATH\Model.php(275): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\dashboard\Table\TableDishController.php(43): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Dashboard\Table\TableDishController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard\Table\TableDishController))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('E:\\Xampp\\htdocs\\codeigniter\\nhahang\\public\\index.php')
+CRITICAL - 2025-02-14 05:06:48 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'dish_id' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 313.
+ 1 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `dish_id`, `name`
+FROM `tables`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `dish_id`, `name`
+FROM `tables`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT `dish_id`, `name`
+FROM `tables`', [], false)
+ 4 SYSTEMPATH\Model.php(275): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Controllers\dashboard\Table\TableDishController.php(43): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Dashboard\Table\TableDishController->index()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard\Table\TableDishController))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('E:\\Xampp\\htdocs\\codeigniter\\nhahang\\public\\index.php')
+CRITICAL - 2025-02-14 05:06:48 --> [Caused by] mysqli_sql_exception: Unknown column 'dish_id' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 308.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(308): mysqli->query('SELECT `dish_id`, `name`
+FROM `tables`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `dish_id`, `name`
+FROM `tables`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `dish_id`, `name`
+FROM `tables`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT `dish_id`, `name`
+FROM `tables`', [], false)
+ 5 SYSTEMPATH\Model.php(275): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\dashboard\Table\TableDishController.php(43): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Dashboard\Table\TableDishController->index()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard\Table\TableDishController))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('E:\\Xampp\\htdocs\\codeigniter\\nhahang\\public\\index.php')
+INFO - 2025-02-14 05:07:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-02-14 05:07:16 --> ErrorException: Undefined variable $capacitys
+[Method: GET, Route: dashboard/tabledish]
+in APPPATH\Views\admin\tabledish\table.php on line 36.
+ 1 APPPATH\Views\admin\tabledish\table.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $capacitys', 'E:\\Xampp\\htdocs\\codeigniter\\nhahang\\app\\Views\\admin\\tabledish\\table.php', 36)
+ 2 SYSTEMPATH\View\View.php(234): include('E:\\Xampp\\htdocs\\codeigniter\\nhahang\\app\\Views\\admin\\tabledish\\table.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('admin/TableDish/table', [], true)
+ 5 APPPATH\Controllers\dashboard\Table\TableDishController.php(53): view('admin/TableDish/table', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Dashboard\Table\TableDishController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard\Table\TableDishController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('E:\\Xampp\\htdocs\\codeigniter\\nhahang\\public\\index.php')
+INFO - 2025-02-14 05:07:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-02-14 05:07:53 --> ErrorException: Undefined variable $capacitys
+[Method: GET, Route: dashboard/tabledish]
+in APPPATH\Views\admin\tabledish\table.php on line 36.
+ 1 APPPATH\Views\admin\tabledish\table.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $capacitys', 'E:\\Xampp\\htdocs\\codeigniter\\nhahang\\app\\Views\\admin\\tabledish\\table.php', 36)
+ 2 SYSTEMPATH\View\View.php(234): include('E:\\Xampp\\htdocs\\codeigniter\\nhahang\\app\\Views\\admin\\tabledish\\table.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('admin/TableDish/table', [], true)
+ 5 APPPATH\Controllers\dashboard\Table\TableDishController.php(53): view('admin/TableDish/table', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Dashboard\Table\TableDishController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard\Table\TableDishController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('E:\\Xampp\\htdocs\\codeigniter\\nhahang\\public\\index.php')
+INFO - 2025-02-14 05:08:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-02-14 05:08:09 --> ErrorException: Undefined variable $capacitys
+[Method: GET, Route: dashboard/tabledish]
+in APPPATH\Views\admin\tabledish\table.php on line 36.
+ 1 APPPATH\Views\admin\tabledish\table.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $capacitys', 'E:\\Xampp\\htdocs\\codeigniter\\nhahang\\app\\Views\\admin\\tabledish\\table.php', 36)
+ 2 SYSTEMPATH\View\View.php(234): include('E:\\Xampp\\htdocs\\codeigniter\\nhahang\\app\\Views\\admin\\tabledish\\table.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('admin/TableDish/table', [], true)
+ 5 APPPATH\Controllers\dashboard\Table\TableDishController.php(53): view('admin/TableDish/table', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Dashboard\Table\TableDishController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard\Table\TableDishController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('E:\\Xampp\\htdocs\\codeigniter\\nhahang\\public\\index.php')
+INFO - 2025-02-14 05:08:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-02-14 05:08:22 --> ErrorException: Undefined array key "floor"
+[Method: GET, Route: dashboard/tabledish]
+in APPPATH\Views\admin\tabledish\table.php on line 60.
+ 1 APPPATH\Views\admin\tabledish\table.php(60): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "floor"', 'E:\\Xampp\\htdocs\\codeigniter\\nhahang\\app\\Views\\admin\\tabledish\\table.php', 60)
+ 2 SYSTEMPATH\View\View.php(234): include('E:\\Xampp\\htdocs\\codeigniter\\nhahang\\app\\Views\\admin\\tabledish\\table.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('admin/TableDish/table', [], true)
+ 5 APPPATH\Controllers\dashboard\Table\TableDishController.php(53): view('admin/TableDish/table', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Dashboard\Table\TableDishController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard\Table\TableDishController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('E:\\Xampp\\htdocs\\codeigniter\\nhahang\\public\\index.php')
+INFO - 2025-02-14 05:19:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-02-14 05:19:23 --> ParseError: Unmatched '}'
+[Method: GET, Route: dashboard/tabledish]
+in APPPATH\Views\admin\tabledish\table.php on line 73.
+ 1 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('admin/TableDish/table', [], true)
+ 3 APPPATH\Controllers\dashboard\Table\TableDishController.php(53): view('admin/TableDish/table', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Dashboard\Table\TableDishController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard\Table\TableDishController))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('E:\\Xampp\\htdocs\\codeigniter\\nhahang\\public\\index.php')
+INFO - 2025-02-14 05:19:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-14 05:19:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-14 05:19:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-14 05:19:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-14 05:23:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-14 05:25:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-14 05:25:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-14 05:25:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-14 05:25:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-14 05:25:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-14 05:25:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-14 05:26:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-14 05:26:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-14 05:26:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-14 05:26:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-14 05:29:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-14 05:56:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-14 05:57:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-14 05:57:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-14 05:57:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-14 05:57:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-14 05:58:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-14 05:58:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-14 05:58:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-14 05:59:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-14 06:17:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-14 06:17:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-14 06:17:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-14 06:17:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-14 06:17:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-14 06:18:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-14 06:18:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-14 06:21:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-14 06:21:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-14 06:21:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-14 06:21:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-14 06:21:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-14 06:27:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-14 06:42:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-14 06:42:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-14 06:53:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-14 06:54:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-14 06:56:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-14 06:56:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-14 06:56:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

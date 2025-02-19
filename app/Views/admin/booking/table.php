@@ -8,9 +8,9 @@
                 <div class="card">
                     <div class="card-header">
                         <div class="row">
-                            <h2 class = "col-md-6">Bảng danh sách bàn được đặt</h2>
+                            <h2 class = "col-md-6">Bảng danh sách đặt bàn</h2>
                             <div class=" col-md-6">
-                                <a class="float-right" href="<?= base_url('dashboard/table/add')?>">
+                                <a class="float-right" href="<?= base_url('dashboard/booking/add')?>">
                                     <button type="button"  class= "btn btn-block btn-primary ">Thêm mới</button>
                                 </a>
                             </div>
@@ -54,12 +54,23 @@
                                 <?php foreach($bookings as $table):?>
                                     <tr>
                                     <td><?=$table['id']?></td>
-                                    <td><?=$table['table_id']?></td>
+                                    <td>
+                                        <?php foreach($tables as $tab):?>
+                                            <?php if($tab['id'] == $table['table_id']){?>
+                                                <?= $tab['table_num']?>
+                                            <?php }?>
+                                        <?php endforeach?>
+                                    </td>
                                     <td><?=$table['customer_name']?></td>
                                     <td><?=$table['phone_number']?></td>
                                     <td><?=$table['request']?></td>
                                     <td><?=$table['time']?></td>
-                                    <td><?=$table['status']?></td>
+                                    <td>
+                                        <select name="status" id="status" class="status" onchange="changId(<?=$table['id']?>,this.value,'status')">
+                                            <option value="0" <?= $table['status'] == 0? 'selected' :' '?>> Chưa xác nhận </option>
+                                            <option value="1" <?= $table['status'] == 1? 'selected' :' '?>> Xác nhận </option>
+                                        </select>
+                                    </td>
                                     <td class="text-center">
                                             <a href="dashboard/booking/edit/<?= $table['id']?>" class="btn btn-primary"><i class="fas fa-edit" name="btn-edit"></i></a>
                                             <a href="dashboard/booking/delete/<?= $table['id']?>" data-url="" class="btn btn-danger btn-del-confirm"><i
@@ -87,12 +98,12 @@
                 info :false,
             });
         });
-        function changeId(material_id,id,name){
+        function changId(material_id,id,name){
             $.ajax({
-                url: '<?= base_url('dashboard/table/updateI')?>',
+                url: '<?= base_url('dashboard/booking/updateI')?>',
                 type: 'post',
                 data: {
-                    user_id: material_id,
+                    id: material_id,
                     role: id,
                     name:name
                 },
@@ -100,7 +111,7 @@
                     if (response.status === 'success') {
                         alert('Cập nhập thành công');
                     } else {
-                        alert('Cập nhập thất bại.');
+                        alert();
                     }
                 }
             });

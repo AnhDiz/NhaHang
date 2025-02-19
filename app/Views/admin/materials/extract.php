@@ -1,7 +1,7 @@
 <?= $this->extend('admin/home')?>
 <?= $this->section('content')?>
 <div class="container-fluid">
-    <h1 class="dash-title">Xuất nguyên liệ<ul></ul></h1>
+    <h1 class="dash-title">Xuất nguyên liệu<ul></ul></h1>
     <div class="row">
         <div class="col-xl-12">
             <?= view('messages/message') ?>

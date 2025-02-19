@@ -9,7 +9,7 @@
                 <div class="card">
                     <div class="card-header">
                         <div class="row">
-                            <h2 class = "col-md-6">Bảng quản trị người dùng</h2>
+                            <h2 class = "col-md-6">Bảng quản trị bàn ăn</h2>
                             <div class=" col-md-6">
                                 <a class="float-right" href="<?= base_url('dashboard/table/add')?>">
                                     <button type="button"  class= "btn btn-block btn-primary ">Thêm mới</button>
@@ -52,6 +52,7 @@
                                 <tr>
                                     <th style="width: 50px" >ID</th>
                                     <th>Số bàn</th>
+                                    <th>Tầng</th>
                                     <th>Trạng thái</th>
                                     <th>Số người tối đa</th>
                                     <th style="width: 170px">Lựa Chọn</th>
@@ -62,6 +63,7 @@
                                     <tr>
                                     <td><?=$table['id']?></td>
                                     <td><?=$table['table_num']?></td>
+                                    <td><?=$table['floor']?></td>
                                     <td>
                                         <select name="status" id="status" class="status" onchange="changeId(<?=$table['id']?>,this.value,'status')" >
                                             <?php foreach($status as $statu): ?>
@@ -91,6 +93,8 @@
                     </div>
                 </div>
                 <div class="card">
+                    <h3 class="text-center mt-4">Sơ đồ Nhà hàng</h3>
+                    <p class="text-center text-muted"><span style="color: blue;">Xanh dương</span> - Bàn trống, <span style="color: red;">Đỏ</span> - Bàn có khách, <span style="color: black;">Đen</span> - Bàn đã đặt trước.</p>
                     <div class="row">
                         <div class="col-md-2">
                             <div class="sidebar sidebar-white-primary bordered">
@@ -107,8 +111,8 @@
                                 </nav>
                             </div>
                         </div>
-                        <div class="col-md-10">
-                            <h1 class="text-center mt-4">Sơ đồ Nhà hàng</h1>
+                        <div class="col-md-10 bg-white">
+                            
                             <div id="list">
                             </div>
                         </div>
@@ -127,24 +131,24 @@
                 info :false,
             });
         });
-        // function changeId(material_id,id,name){
-        //     $.ajax({
-        //         url: '<?= base_url('dashboard/table/updateI')?>',
-        //         type: 'post',
-        //         data: {
-        //             user_id: material_id,
-        //             role: id,
-        //             name:name
-        //         },
-        //         success: function(response) {
-        //             if (response.status === 'success') {
-        //                 alert('Cập nhập thành công');
-        //             } else {
-        //                 alert('Cập nhập thất bại.');
-        //             }
-        //         }
-        //     });
-        // };
+        function changeId(material_id,id,name){
+            $.ajax({
+                url: '<?= base_url('dashboard/table/updateI')?>',
+                type: 'post',
+                data: {
+                    user_id: material_id,
+                    role: id,
+                    name:name
+                },
+                success: function(response) {
+                    if (response.status === 'success') {
+                        alert('Cập nhập thành công');
+                    } else {
+                        alert('Cập nhập thất bại.');
+                    }
+                }
+            });
+        };
         $('.type-item').on('click', function() {
             const floor = $(this).data('id');
             $('.type-item').removeClass('active');
@@ -155,49 +159,80 @@
 
                 if (data.status === 'success') {
                     const tables = data.data;
-                    const rowCount = parseInt(data.row.row); // Số hàng (row)
-                    const colCount = parseInt(data.col.col); // Số cột (col)
+                    const rowCount = parseInt(data.row);
+                    const colCount = parseInt(data.col);
                     const materialList = $('#list');
                     materialList.empty();
 
-                    // Tạo bảng 2 chiều
                     let tableHTML = '<table class="table table-bordered">';
 
-                    // Khởi tạo mảng 2 chiều để giữ các bàn ăn
                     const tableGrid = Array(rowCount).fill().map(() => Array(colCount).fill(null));
 
-                    // Lặp qua các bàn và điền vào grid
                     tables.forEach(table => {
-                        const row = parseInt(table.row) - 1; // Chuyển đổi row từ 1-indexed thành 0-indexed
-                        const col = parseInt(table.col) - 1; // Chuyển đổi col từ 1-indexed thành 0-indexed
-                        tableGrid[row][col] = table; // Gán bàn vào vị trí tương ứng trong grid
+                        const row = table.row - 1; 
+                        const col = table.col - 1;
+                        tableGrid[row][col] = table;
                     });
 
-                    // Duyệt qua các hàng
                     for (let r = 0; r < rowCount; r++) {
-                        tableHTML += '<tr>'; // Mở một hàng mới
-                        
-                        // Duyệt qua các cột
+                        tableHTML += '<tr>'; 
+
                         for (let c = 0; c < colCount; c++) {
-                            const table = tableGrid[r][c]; // Lấy bàn tại vị trí (r, c)
+                            const table = tableGrid[r][c]; 
                             
                             if (table) {
-                                // Nếu có bàn tại vị trí đó
-                                const statusClass = table.status === '1' ? 'available' : 'occupied'; // Ví dụ: 1 là có bàn trống
-                                tableHTML += `<td style = "width: 100px" class="${statusClass}" data-id="${table.table_num}">
-                                    Bàn ${table.table_num}
+                                let statusClass;
+                                switch (table.status) {
+                                    case '2':
+                                        statusClass = 'ordered';
+                                        break;
+                                    case '3':
+                                        statusClass = 'eating';
+                                        break;
+                                    default:
+                                        statusClass = 'available';
+                                } 
+                                tableHTML += `<td style = "width: 100px;height:100px"  class="" data-id="${table.table_num}">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                        ${table.table_num}
+                                        <div class="${statusClass}"></div>
+                                        </div>
+                                        <div class="col-md-6">
+                                        ${table.capacity}
+                                        <i class="bi bi-person" style = "width: 40px"></i>
+                                        </div>
+                                    </div>
                                 </td>`;
                             } else {
-                                // Nếu không có bàn, hiển thị ô trống
-                                tableHTML += '<td style = "width: 100px"></td>';
+                                if(r == 2 && c == 0){
+                                tableHTML += `<td style = "width: 100px;height:100px" class="" data-id="">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                        <i class="bi-bar-chart-steps" style = "width: 40px"></i>
+                                        Cầu thang
+                                        </div>
+                                    </div>
+                                </td>`;
+                                }else if(r == 0 && c==4){
+                                    tableHTML += `<td style = "width: 100px;height:100px" class="" data-id="">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <i class="bi-door-open-fill" style = "width: 40px"></i>
+                                                Cửa
+                                                </div>
+                                            </div>
+                                        </td>`;
+                                }else{
+                                    tableHTML += '<td style = "width: 100px;height:100px"></td>'
+                                }
                             }
                         }
                         
-                        tableHTML += '</tr>'; // Đóng hàng
+                        tableHTML += '</tr>'; 
                     }
-
-                    tableHTML += '</table>'; // Đóng bảng
-                    materialList.append(tableHTML); // Thêm bảng vào danh sách
+                    tableHTML += '</table>';
+                    materialList.append(tableHTML); 
                 } else {
                     alert(data.message);
                 }

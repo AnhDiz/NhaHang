@@ -36,6 +36,6 @@ class TableModel extends Model
         return $this->countAllResults();
     }
     public function getByfloor($floor) {
-        return $this->select('table_num,status,row,col')->where('floor', $floor)->findAll();
+        return $this->select('table_num,status,row,col,capacity')->where('floor', $floor)->findAll();
     }
 }

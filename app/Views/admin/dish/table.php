@@ -38,7 +38,7 @@
                         </div>
                         <div class="col-md-6 ">
                             <div class="float-right">
-                                <input style="width: 400px" type="text" name="search" placeholder="Tìm kiếm theo chức vụ hoặc mô tả" value="">
+                                <input style="width: 400px" type="text" name="search" placeholder="Tìm kiếm theo tên món hoặc mô tả" value="">
                                 <button type="submit">Search</button>
                             </div>
                         </div>
@@ -52,6 +52,7 @@
                                 <th>Tên món</th>
                                 <th>Loại</th>
                                 <th>Mô tả</th>
+                                <th>Giá (Vnđ)</th>
                                 <th>Lựa chọn</th>
                             </tr>
                         </thead>
@@ -72,6 +73,7 @@
                                         </select>
                                     </td>
                                     <td><?= $dish['description']?></td>
+                                    <td><?= $dish['price']?></td>
                                     <td class="text-center">
                                         <a href="dashboard/dish/edit/<?= $dish['dish_id'] ?>" class="btn btn-primary"><i class="fas fa-edit" name="btn-edit"></i></a>
                                         <a href="dashboard/dish/delete/<?= $dish['dish_id']?>" data-url="" class="btn btn-danger btn-del-confirm"><i

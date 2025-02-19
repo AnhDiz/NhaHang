@@ -36,8 +36,8 @@ class Home extends BaseController
     {
         return view('main/team');
     }
-    public function testmonial(): string
+    public function personal(): string
     {
-        return view('main/testmonial');
+        return view('main/personal');
     }
 }

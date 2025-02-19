@@ -79,7 +79,6 @@ class AuthFilter implements FilterInterface
                 'dashboard/material' => true,
                 'dashboard/dish' => true,
                 'dashboard/materialtype' => true,
-                'dashboard/menu' => true,
                 'dashboard/table' => true,
                 'dashboard/dishtype' => true,
                 'dashboard/booking' => true,
@@ -109,11 +108,6 @@ class AuthFilter implements FilterInterface
             }else{
                 session()->set(['dashboard/material' => false]);
             }
-            if($this->check_permission('dashboard/menu',$id)){
-                session()->set(['dashboard/menu' => true]);
-            }else{
-                session()->set(['dashboard/menu' => false]);
-            }
             if($this->check_permission('dashboard/dish',$id)){
                 session()->set(['dashboard/dish' => true]);
             }else{
@@ -139,7 +133,7 @@ class AuthFilter implements FilterInterface
                 return redirect('error');
             }
         }else{
-            return view('/');
+            return redirect('/');
         }
     }
     

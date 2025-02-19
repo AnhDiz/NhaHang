@@ -20,6 +20,11 @@ class Bookings extends Migration
                 'constraint'     => 11,
                 'unsigned'       => true,
             ],
+            'email' =>[
+                'type' => 'VARCHAR',
+                'constraint' => '255',
+                'default' =>'NULL',
+            ],
             'customer_name' =>[
                 'type' => 'VARCHAR',
                 'constraint' => '255',
@@ -43,7 +48,7 @@ class Bookings extends Migration
             'updated_at datetime default current_timestamp on update current_timestamp'
         ]);
         $this->forge->addKey('dish_id', true);
-        $this->forge->addForeignKey('id', 'tables', 'id', 'CASCADE', 'CASCADE');
+        $this->forge->addForeignKey('table_id', 'tables', 'id', 'CASCADE', 'CASCADE');
         $this->forge->createTable('bookings');
     }
 

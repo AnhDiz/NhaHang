@@ -8,9 +8,6 @@
     <meta content="" name="keywords">
     <meta content="" name="description">
 
-    <!-- Favicon -->
-    <link href="<?=base_url('home')?>/img/favicon.ico" rel="icon">
-
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -30,6 +27,7 @@
 
     <!-- Template Stylesheet -->
     <link href="<?=base_url('home')?>/css/style.css" rel="stylesheet">
+    <link href="<?=base_url('home')?>/css/table.css" rel="stylesheet">
 </head>
 
 <body>
@@ -53,12 +51,20 @@
                             <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
                             <div class="dropdown-menu m-0">
                                 <a href="<?=base_url('main/booking')?>" class="dropdown-item">Đặt bàn</a>
-                                <a href="<?=base_url('main/testmonial')?>" class="dropdown-item">Đánh giá</a>
+                                <a href="<?=base_url('main/personal')?>" class="dropdown-item">Cá nhân</a>
                             </div>
                         </div>
                         <a href="<?=base_url(relativePath: 'main/contact')?>" class="nav-item nav-link">Contact</a>
                     </div>
                     <a href="<?=base_url('main/booking')?>" class="btn btn-primary py-2 px-4">Đặt bàn</a>
+                    <?php if(session()->get('logged_in')){ ?>
+                    <div class="user-icon-container" style="position: relative; display: inline-block; cursor: pointer;">
+                        <i class="fas fa-user-circle" style="font-size: 40px;"></i>
+                        <div class="logout-menu" style="display: none; position: absolute; top: 30px; right: 0; background: white; border: 1px solid #ccc; padding: 10px; border-radius: 5px; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);">
+                            <a href="logout" style="text-decoration: none; color: black;">Đăng xuất</a>
+                        </div>
+                    </div>
+                    <?php }?>
                 </div>
         </nav>
 
@@ -78,12 +84,13 @@
         </div>
         <!-- Navbar & Hero End -->
 
-
         <!-- Reservation Start -->
         <div class="container-xxl py-5 px-0 wow fadeInUp" data-wow-delay="0.1s">
             <div class="row g-0">
-                <div class="col-md-8">
+                <div class="col-md-8 bg-info">
                     <div class="row">
+                        <h3 class="text-center mt-4">Sơ đồ Nhà hàng</h3>
+                        <p class="text-center text-muted"><span style="color: blue;">Xanh dương</span> - Bàn trống, <span style="color: red;">Đỏ</span> - Bàn có khách, <span style="color: black;">Đen</span> - Bàn đã đặt trước.</p>
                         <div class="col-md-2">
                             <div class="sidebar sidebar-white-primary bordered">
                                 <nav class="mt-2">
@@ -99,8 +106,8 @@
                                 </nav>
                             </div>
                         </div>
-                        <div class="col-md-10">
-                            <h3 class="text-center mt-4">Sơ đồ Nhà hàng</h3>
+                        <div class="col-md-10 bg-white">
+                            
                             <div id="list">
                             </div>
                         </div>
@@ -110,47 +117,37 @@
                     <div class="p-5 wow fadeInUp" data-wow-delay="0.2s">
                         <h5 class="section-title ff-secondary text-start text-primary fw-normal">Reservation</h5>
                         <h1 class="text-white mb-4">Đặt bàn Online</h1>
-                        <form>
+                        <form action="booking/create" method="post" enctype="multipart/form-data">
                             <div class="row g-3">
-                                <div class="col-md-6">
-                                    <div class="form-floating">
-                                        <input type="text" class="form-control" id="name" placeholder="Your Name">
-                                        <label for="name">Your Name</label>
-                                    </div>
+                                <div class="col-md-12">
+                                    <table class ="table table-head-fixed table-bordered text-nowrap bg-white" id="Table">
+                                        <thead>
+                                        </thead>
+                                        <tbody>
+                                        </tbody>
+                                    </table>
                                 </div>
-                                <div class="col-md-6">
-                                    <div class="form-floating">
-                                        <input type="email" class="form-control" id="email" placeholder="Your Email">
-                                        <label for="email">Your Email</label>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
+                                <div class="col-md-12">
                                     <div class="form-floating date" id="date3" data-target-input="nearest">
-                                        <input type="text" class="form-control datetimepicker-input" id="datetime" placeholder="Date & Time" data-target="#date3" data-toggle="datetimepicker" />
-                                        <label for="datetime">Date & Time</label>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-floating">
-                                        <select class="form-select" id="select1">
-                                          <option value="1">People 1</option>
-                                          <option value="2">People 2</option>
-                                          <option value="3">People 3</option>
-                                        </select>
-                                        <label for="select1">No Of People</label>
-                                      </div>
-                                </div>
-                                <div class="col-12">
-                                    <div class="form-floating">
-                                        <textarea class="form-control" placeholder="Special Request" id="message" style="height: 100px"></textarea>
-                                        <label for="message">Special Request</label>
+                                        <input name="time" type="datetime-local" class="form-control datetimepicker-input" id="datetime" placeholder="Thời gian" data-target="#date3" data-toggle="datetimepicker" />
+                                        <label for="datetime">Thời gian</label>
                                     </div>
                                 </div>
                                 <div class="col-12">
-                                    <button class="btn btn-primary w-100 py-3" type="submit">Book Now</button>
+                                    <div class="form-floating">
+                                        <textarea name="request" class="form-control" placeholder="Special Request" id="message" style="height: 100px"></textarea>
+                                        <label for="message">Yêu cầu</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <button class="btn btn-primary w-100 py-3" type="submit">Đặt ngay</button>
                                 </div>
                             </div>
                         </form>
+                        <div id="notification" style="display: none; position: fixed; top: 20px; right: 20px; background: #fff; border: 1px solid #ccc; padding: 10px; border-radius: 5px; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); z-index: 1000;">
+                            <span id="notification-message"></span>
+                        </div>
+
                     </div>
                 </div>
             </div>
@@ -258,8 +255,44 @@
     <script src="<?=base_url('home')?>/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
 
     <!-- Template Javascript -->
-    <script src="js/main.js"></script>
+    <script src="<?=base_url('home')?>/js/main.js"></script>
     <script>
+        $(document).on('click', '.user-icon-container', function () {
+            $('.logout-menu').toggle();
+        });
+
+        $(document).on('click', function (e) {
+            if (!$(e.target).closest('.user-icon-container').length) {
+                $('.logout-menu').hide();
+            }
+        });
+        let count = 1;
+        $(document).on('click', '.add-to-selected', function () {
+            const tableId = $(this).data('id');
+            const tableNumberNow = $(this).data('number-now'); 
+            const existingRow = $('#Table tbody').find(`tr[data-id="${tableId}"]`);
+            
+            let status = $(this).data('status');
+            if(status != "available"){
+                alert("Bàn này đã được đặt trược hoặc đang được sử dụng");
+                return;
+            }
+            if (existingRow.length > 0) {
+                existingRow.remove();
+                $(this).removeClass("bg-info");
+                count --;
+                return;
+            } else {
+                const newRow = `
+                    <tr data-id="${tableId}" id="${tableId}">
+                        <td><input name = "tables[${count}]" value ="${tableId}" readonly></input></td>
+                    </tr>
+                `;
+                $('#Table tbody').append(newRow); // Thêm phần tử nếu chưa tồn tại
+            }
+            $(this).addClass("bg-info");
+            count ++;
+        });
         $('.type-item').on('click', function() {
             const floor = $(this).data('id');
             $('.type-item').removeClass('active');
@@ -270,55 +303,115 @@
 
                 if (data.status === 'success') {
                     const tables = data.data;
-                    const rowCount = parseInt(data.row.row); // Số hàng (row)
-                    const colCount = parseInt(data.col.col); // Số cột (col)
+                    const rowCount = parseInt(data.row);
+                    const colCount = parseInt(data.col); 
                     const materialList = $('#list');
                     materialList.empty();
 
-                    // Tạo bảng 2 chiều
-                    let tableHTML = '<table class="table">';
+                    let tableHTML = '<table class="table table-borderless">';
 
-                    // Khởi tạo mảng 2 chiều để giữ các bàn ăn
                     const tableGrid = Array(rowCount).fill().map(() => Array(colCount).fill(null));
 
-                    // Lặp qua các bàn và điền vào grid
                     tables.forEach(table => {
-                        const row = parseInt(table.row) - 1; // Chuyển đổi row từ 1-indexed thành 0-indexed
-                        const col = parseInt(table.col) - 1; // Chuyển đổi col từ 1-indexed thành 0-indexed
-                        tableGrid[row][col] = table; // Gán bàn vào vị trí tương ứng trong grid
+                        const row = parseInt(table.row) - 1;
+                        const col = parseInt(table.col) - 1;
+                        tableGrid[row][col] = table;
                     });
 
-                    // Duyệt qua các hàng
                     for (let r = 0; r < rowCount; r++) {
-                        tableHTML += '<tr>'; // Mở một hàng mới
-                        
-                        // Duyệt qua các cột
+                        tableHTML += '<tr>'; 
+                       
                         for (let c = 0; c < colCount; c++) {
-                            const table = tableGrid[r][c]; // Lấy bàn tại vị trí (r, c)
+                            const table = tableGrid[r][c]; 
                             
                             if (table) {
-                                // Nếu có bàn tại vị trí đó
-                                const statusClass = table.status === '1' ? 'available' : 'occupied'; // Ví dụ: 1 là có bàn trống
-                                tableHTML += `<td style = "width: 100px" class="${statusClass}" data-id="${table.table_num}">
-                                    ${table.table_num}
+                                let statusClass;
+                                switch (table.status) {
+                                    case '2':
+                                        statusClass = 'ordered';
+                                        break;
+                                    case '3':
+                                        statusClass = 'eating';
+                                        break;
+                                    default:
+                                        statusClass = 'available';
+                                }
+                                tableHTML += `<td style = "width: 100px;height:100px">
+                                    <button 
+                                        type="button" 
+                                        class="add-to-selected"
+                                        data-id="${table.table_num}"
+                                        data-status = "${statusClass}">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                            ${table.table_num}
+                                            <div class="${statusClass}"></div>
+                                            </div>
+                                            <div class="col-md-6 column">
+                                                <div class = "row-md-6">
+                                                    ${table.capacity}
+                                                    <i class="bi bi-person" style = "width: 40px"></i>
+                                                </div>
+                                                <div class = "row-md-6">
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </button>
                                 </td>`;
                             } else {
-                                // Nếu không có bàn, hiển thị ô trống
-                                tableHTML += '<td style = "width: 100px"></td>';
+                                if(r == 2 && c == 0){
+                                tableHTML += `<td style = "width: 100px;height:100px" class="" data-id="">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                        <i class="bi-bar-chart-steps" style = "width: 40px"></i>
+                                        Cầu thang
+                                        </div>
+                                    </div>
+                                </td>`;
+                                }else if(r == 0 && c==4){
+                                    tableHTML += `<td style = "width: 100px;height:100px" class="" data-id="">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <i class="bi-door-open-fill" style = "width: 40px"></i>
+                                                Cửa
+                                                </div>
+                                            </div>
+                                        </td>`;
+                                }else{
+                                    tableHTML += '<td style = "width: 100px;height:100px"></td>'
+                                }
                             }
                         }
                         
-                        tableHTML += '</tr>'; // Đóng hàng
+                        tableHTML += '</tr>'; 
                     }
 
-                    tableHTML += '</table>'; // Đóng bảng
-                    materialList.append(tableHTML); // Thêm bảng vào danh sách
+                    tableHTML += '</table>'; 
+                    materialList.append(tableHTML);
                 } else {
                     alert(data.message);
                 }
             });
         });
+        function showNotification(message, status) {
+            let notification = document.getElementById('notification');
+            let messageBox = document.getElementById('notification-message');
+            
+            messageBox.textContent = message;
+            notification.style.backgroundColor = status === 'success' ? '#d4edda' : '#f8d7da';
+            notification.style.borderColor = status === 'success' ? '#c3e6cb' : '#f5c6cb';
+            notification.style.color = status === 'success' ? '#155724' : '#721c24';
+            
+            notification.style.display = 'block';
+            setTimeout(() => {
+                notification.style.display = 'none';
+            }, 3000);
+        }
 
+        function handleResponse(response) {
+            showNotification(response.message, response.status);
+        }
     </script>
 </body>
 

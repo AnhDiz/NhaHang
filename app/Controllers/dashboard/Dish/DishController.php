@@ -64,8 +64,9 @@ class DishController extends BaseController
             'price' => $this->request->getPost('price'),
             'image' => $imagename,
         ];
+        // dd($data);
         $dish->save($data);
-        return redirect()->to('dashboard/dish')->withInput()->with('succsessing','Thêm món ăn mới thành công');
+        return redirect()->to('dashboard/dish')->withInput()->with(Result::MESSAGE_CODE_OK,'Thêm món ăn mới thành công');
     }
     public function delete($id)
     {
@@ -85,7 +86,7 @@ class DishController extends BaseController
 
             // Xóa món ăn khỏi database
             $dish->delete($id);
-            return redirect()->to('dashboard/dish')->withInput()->with('succsessing', 'Xóa món ăn thành công.');
+            return redirect()->to('dashboard/dish')->withInput()->with(Result::MESSAGE_CODE_OK, 'Xóa món ăn thành công.');
         } catch (\Exception $e) {
             return redirect()->back()->with('errorsMsg', 'Lỗi khi xóa món ăn: ' . $e->getMessage());
         }
@@ -147,8 +148,8 @@ class DishController extends BaseController
                 'price' => $this->request->getPost('price'),
                 'image' => $imagename,
             ];
-
-            if($dish->save($data)){
+            // dd($data);
+            if($dish->update($data['id'],$data)){
                 $Result =[
                     'status' => Result::STATUS_CODE_OK,
                     'messageCode' => Result::MESSAGE_CODE_OK,

@@ -4,6 +4,8 @@ namespace App\Controllers\Dashboard\Table;
 
 use App\Controllers\BaseController;
 use CodeIgniter\HTTP\ResponseInterface;
+use Exception;
+use App\Common\Result;
 use App\Models\TableModel;
 use App\Models\PreOrderModel;
 use App\Models\StatusTableModel;
@@ -59,9 +61,89 @@ class TableController extends BaseController
             return;
         }
         $tables = $this->tables->getByfloor($floor);
-        $row = $this->tables->selectMax('row')->where('floor',$floor)->first();
-        $col = $this->tables->selectMax('col')->where('floor',$floor)->first();
+        $row = 5;
+        $col = 5;
 
         echo json_encode(['status' => 'success', 'data' => $tables,'row' => $row, 'col' => $col]);
     }
+    public function add(){
+        $data =[
+            'floors' => $this->tables->select('DISTINCT(floor)')->findAll(),
+        ];
+        return view('admin/table/add',$data);
+    }
+    public function create(){
+        $data = $this->request->getPost();
+        $data['status']= '1';
+        try {
+            $this->tables->save($data);
+            $return =[
+                'status' => Result::STATUS_CODE_OK,
+                'messageCode' => Result::MESSAGE_CODE_OK,
+                'message' => ['thành công' => 'Thêm tài khoản thành công']
+            ];
+            
+        } catch (Exception $th) {
+            $return =[
+                'status' => Result::STATUS_CODE_ERR,
+                'messageCode' => Result::MESSAGE_CODE_ERR,
+                'message' => ['thành công' => $th->getMessage()]
+            ];
+        }
+        return redirect()->back()->withInput()->with($return['messageCode'],$return['message']);
+    }
+    public function delete($id){
+        $result = $this->Deletetables($id);
+        return redirect()->back()->withInput()->with($result['messageCode'],$result['message']);
+    }
+    public function Deletetables($id){
+        try {
+            $this->tables->delete(['id'=>$id]);
+            return[
+                'status' => Result::STATUS_CODE_OK,
+                'messageCode' => Result::MESSAGE_CODE_OK,
+                'message' => ['thành công' => 'Xoá bàn thành công']
+            ];
+        } catch (Exception $th) {
+            return[
+                'status' => Result::STATUS_CODE_ERR,
+                'messageCode' => Result::MESSAGE_CODE_ERR,
+                'message' => ['Thất bại' => $th->getMessage()]
+            ];
+        }
+    }
+    public function edit($id){
+        $preoderp = new PreOrderModel();
+        $status = new StatusTableModel();
+        // dd($capacityfilter);
+        $data =[
+            'capacitys' => $preoderp->findAll(),
+            'table' => $this->tables->where('id',$id)->first(),
+            'status' => $status->findAll(),
+            'floors' => $this->tables->select('DISTINCT(floor)')->findAll(),
+        ];
+        return view('admin/table/edit',$data);
+    }
+    public function update(){
+        try{
+        $data = $this->request->getPost();
+        $id = $data['id'];
+        unset($data['id']);
+        if($this->tables->update($id,$data)) {
+            $result= [
+                'status' => Result::STATUS_CODE_OK,
+                'messageCode' => Result::MESSAGE_CODE_OK,
+                'message' => ['thành công' => 'Cập nhật thành công']
+            ];
+            return redirect()->to('dashboard/table')->withInput()->with($result['messageCode'], $result['message']);
+        }} catch(Exception $e){
+            $result=[
+                'status' => Result::STATUS_CODE_ERR,
+                'messageCode' => Result::MESSAGE_CODE_ERR,
+                'message' => ['Thất bại' => $e->getMessage()]
+            ];
+            return redirect()->back()->withInput()->withInput()->with($result['messageCode'], $result['message']);
+        }
+    }
+    
 }

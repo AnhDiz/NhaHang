@@ -50,7 +50,7 @@ class TableDish extends Migration
         
         $this->forge->addKey('id', true);
         $this->forge->addForeignKey('table_id', 'tables', 'id', 'CASCADE', 'CASCADE');
-        $this->forge->addForeignKey('dish_id', 'dishes', 'id', 'CASCADE', 'CASCADE'); // Sửa tên bảng thành dishes
+        $this->forge->addForeignKey('dish_id', 'dishs', 'dish_id', 'CASCADE', 'CASCADE');
         $this->forge->createTable('table_dish');
     }
 

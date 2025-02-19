@@ -1,0 +1,24 @@
+.available{
+    width: 50px;
+    height: 50px;
+    background-image: url('../img/dining-room-blue.png');
+    background-size: cover; /* Điều chỉnh kích thước ảnh */
+    background-position: center; /* Căn giữa ảnh */
+    background-repeat: no-repeat; /* Không lặp lại ảnh */
+}
+.eating{
+    width: 50px;
+    height: 50px;
+    background-image: url('../img/dining-room-red.png');
+    background-size: cover; /* Điều chỉnh kích thước ảnh */
+    background-position: center; /* Căn giữa ảnh */
+    background-repeat: no-repeat; /* Không lặp lại ảnh */
+}
+.ordered{
+    width: 50px;
+    height: 50px;
+    background-image: url('../img/dining-room-white.png');
+    background-size: cover; /* Điều chỉnh kích thước ảnh */
+    background-position: center; /* Căn giữa ảnh */
+    background-repeat: no-repeat; /* Không lặp lại ảnh */
+}

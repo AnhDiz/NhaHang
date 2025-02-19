@@ -38,37 +38,44 @@
         <!-- Navbar & Hero Start -->
         <div class="container-xxl position-relative p-0">
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4 px-lg-5 py-3 py-lg-0">
-                <a href="<?=base_url('')?>" class="navbar-brand p-0">
-                    <h1 class="text-primary m-0"><i class="fa fa-utensils me-3"></i>Nhà hàng Tân Cảng</h1>
-                    <!-- <img src="<?=base_url('')?>/img/logo.png" alt="Logo"> -->
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-                    <span class="fa fa-bars"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarCollapse">
-                    <div class="navbar-nav ms-auto py-0 pe-4">
-                        <a href="<?=base_url('')?>" class="nav-item nav-link active">Trang chủ</a>
-                        <a href="<?=base_url('main/service')?>" class="nav-item nav-link">Service</a>
-                        <a href="<?=base_url('main/menu')?>" class="nav-item nav-link">Menu</a>
-                        <div class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
-                            <div class="dropdown-menu m-0">
-                                <a href="<?=base_url('main/booking')?>" class="dropdown-item">Đặt bàn</a>
-                                <a href="<?=base_url('main/testmonial')?>" class="dropdown-item">Đánh giá</a>
-                            </div>
+            <a href="<?=base_url('')?>" class="navbar-brand p-0">
+                <h1 class="text-primary m-0"><i class="fa fa-utensils me-3"></i>Nhà hàng Tân Cảng</h1>
+                <!-- <img src="<?=base_url('')?>/img/logo.png" alt="Logo"> -->
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="fa fa-bars"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto py-0 pe-4">
+                    <a href="<?=base_url('')?>" class="nav-item nav-link active">Trang chủ</a>
+                    <a href="<?=base_url('main/service')?>" class="nav-item nav-link">Service</a>
+                    <a href="<?=base_url('main/menu')?>" class="nav-item nav-link">Menu</a>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+                        <div class="dropdown-menu m-0">
+                            <a href="<?=base_url('main/booking')?>" class="dropdown-item">Đặt bàn</a>
+                            <a href="<?=base_url('main/personal')?>" class="dropdown-item">Cá nhân</a>
                         </div>
-                        <a href="<?=base_url(relativePath: 'main/contact')?>" class="nav-item nav-link">Contact</a>
                     </div>
-                    <a href="<?=base_url('main/booking')?>" class="btn btn-primary py-2 px-4">Đặt bàn</a>
+                    <a href="<?=base_url(relativePath: 'main/contact')?>" class="nav-item nav-link">Contact</a>
                 </div>
+                <a href="<?=base_url('main/booking')?>" class="btn btn-primary py-2 px-4">Đặt bàn</a>
+                <?php if(session()->get('logged_in')){ ?>
+                <div class="user-icon-container" style="position: relative; display: inline-block; cursor: pointer;">
+                    <i class="fas fa-user-circle" style="font-size: 40px;"></i>
+                    <div class="logout-menu" style="display: none; position: absolute; top: 30px; right: 0; background: white; border: 1px solid #ccc; padding: 10px; border-radius: 5px; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);">
+                        <a href="logout" style="text-decoration: none; color: black;">Đăng xuất</a>
+                    </div>
+                </div>
+                <?php }?>
+            </div>
         </nav>
-
             <div class="container-xxl py-5 bg-dark hero-header mb-5">
                 <div class="container my-5 py-5">
                     <div class="row align-items-center g-5">
                         <div class="col-lg-6 text-center text-lg-start">
                             <h1 class="display-3 text-white animated slideInLeft">Lựa chọn <br>Bữa ăn</h1>
-                            <a href="" class="btn btn-primary py-sm-3 px-sm-5 me-3 animated slideInLeft">Đặt bàn</a>
+                            <a href="main/booking" class="btn btn-primary py-sm-3 px-sm-5 me-3 animated slideInLeft">Đặt bàn</a>
                         </div>
                         <div class="col-lg-6 text-center text-lg-end overflow-hidden">
                             <img class="img-fluid" src="<?=base_url('home')?>/img/hero.png" alt="">
@@ -231,60 +238,7 @@
 
 
         <!-- Testimonial Start -->
-        <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
-            <div class="container">
-                <div class="text-center">
-                    <h5 class="section-title ff-secondary text-center text-primary fw-normal">Testimonial</h5>
-                    <h1 class="mb-5">Our Clients Say!!!</h1>
-                </div>
-                <div class="owl-carousel testimonial-carousel">
-                    <div class="testimonial-item bg-transparent border rounded p-4">
-                        <i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
-                        <p>Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam</p>
-                        <div class="d-flex align-items-center">
-                            <img class="img-fluid flex-shrink-0 rounded-circle" src="<?=base_url('home')?>/img/testimonial-1.jpg" style="width: 50px; height: 50px;">
-                            <div class="ps-3">
-                                <h5 class="mb-1">Client Name</h5>
-                                <small>Profession</small>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="testimonial-item bg-transparent border rounded p-4">
-                        <i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
-                        <p>Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam</p>
-                        <div class="d-flex align-items-center">
-                            <img class="img-fluid flex-shrink-0 rounded-circle" src="<?=base_url('home')?>/img/testimonial-2.jpg" style="width: 50px; height: 50px;">
-                            <div class="ps-3">
-                                <h5 class="mb-1">Client Name</h5>
-                                <small>Profession</small>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="testimonial-item bg-transparent border rounded p-4">
-                        <i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
-                        <p>Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam</p>
-                        <div class="d-flex align-items-center">
-                            <img class="img-fluid flex-shrink-0 rounded-circle" src="<?=base_url('home')?>/img/testimonial-3.jpg" style="width: 50px; height: 50px;">
-                            <div class="ps-3">
-                                <h5 class="mb-1">Client Name</h5>
-                                <small>Profession</small>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="testimonial-item bg-transparent border rounded p-4">
-                        <i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
-                        <p>Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam</p>
-                        <div class="d-flex align-items-center">
-                            <img class="img-fluid flex-shrink-0 rounded-circle" src="<?=base_url('home')?>/img/testimonial-4.jpg" style="width: 50px; height: 50px;">
-                            <div class="ps-3">
-                                <h5 class="mb-1">Client Name</h5>
-                                <small>Profession</small>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+        
         <!-- Testimonial End -->
         
 
@@ -371,6 +325,17 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+    <script>
+        $(document).on('click', '.user-icon-container', function () {
+            $('.logout-menu').toggle();
+        });
+        
+        $(document).on('click', function (e) {
+            if (!$(e.target).closest('.user-icon-container').length) {
+                $('.logout-menu').hide();
+            }
+        });
+    </script>
 </body>
 
 </html>

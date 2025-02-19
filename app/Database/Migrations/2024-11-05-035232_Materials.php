@@ -10,10 +10,10 @@ class Materials extends Migration
     {
         $this->forge->addField([
             'material_id' => [
-            'type'           => 'INT',
-            'constraint'     => 11,
-            'auto_increment' => true,
-            'unsigned'       => true,
+                'type'           => 'INT',
+                'constraint'     => 11,
+                'auto_increment' => true,
+                'unsigned'       => true,
             ],
             'name' => [
                 'type'       => 'VARCHAR',
